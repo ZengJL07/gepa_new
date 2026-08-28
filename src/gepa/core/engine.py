@@ -360,6 +360,69 @@ class GEPAEngine(Generic[DataId, DataInst, Trajectory, RolloutOutput]):
             return batch_fn(items)
         return default_batch_evaluate(self.adapter, items)
 
+    def _reeval_parents_if_requested(
+        self,
+        selected: list[CandidateProposal],
+        state: GEPAState[RolloutOutput, DataId],
+    ) -> None:
+        """Refresh selected proposals' parents on the current eval batch.
+
+        Opt-in via ``val_evaluation_policy.requires_parent_reeval``; probed with
+        ``getattr``, so a policy without the attribute leaves this a no-op and
+        every existing configuration behaves exactly as before.
+
+        A subset evaluation policy scores each candidate on the ids it chose for
+        that iteration, while a parent keeps whatever ids it was scored on when
+        it entered the pool. Comparing the two then averages over different
+        samples. Policies that need parent and child judged on the same ids (e.g.
+        the APEX rank-sensitive policy, whose Algorithm 1 line 15 evaluates
+        ``P_new`` *and* ``P_curr`` on one ``D_eval``) set the flag to have the
+        parents re-scored here.
+
+        Scores are *merged into* the parent's existing subscores rather than
+        replacing them, and coverage is allowed to GROW: a parent scored on 15 ids
+        when it entered the pool must pick up this iteration's ``D_eval`` in full,
+        otherwise the comparison the flag exists to enable still runs on whatever
+        the two happened to share. Restricting the merge to ids the parent already
+        covered made this method a no-op for every non-seed parent -- their own
+        ``D_eval`` was disjoint from the new one, so overlap collapsed to 0-5 ids
+        and Algorithm 1 line 16 was decided on a handful of examples.
+
+        The resume guard in ``initialize_gepa_state`` treats the seed's subscore
+        *count* as the run's valset size, so that count must not change. It does
+        not: ``D_eval`` is always a subset of ``D``, and the seed is evaluated on
+        all of ``D`` (Algorithm 1 line 2), so merging can only overwrite ids the
+        seed already has -- never extend it.
+
+        The Pareto front is intentionally not touched. It is monotone (a front
+        entry is replaced only by a strictly higher score), so refreshing a
+        parent's scores downward must not retroactively evict it.
+
+        Cost is near zero when ``cache_evaluation`` is on: the parent has already
+        been scored on most of these ids, and the metric-call counter charges
+        only cache misses.
+        """
+        if not getattr(self.val_evaluation_policy, "requires_parent_reeval", False):
+            return
+
+        parent_idxs = sorted(
+            {
+                parent_idx
+                for proposal in selected
+                for parent_idx in proposal.parent_program_ids
+                if parent_idx is not None and parent_idx < len(state.program_candidates)
+            }
+        )
+        if not parent_idxs:
+            return
+
+        programs = [state.program_candidates[idx] for idx in parent_idxs]
+        results = self._evaluate_programs_on_valset(programs, state)
+        for parent_idx, (valset_evaluation, num_actual_evals) in zip(parent_idxs, results, strict=True):
+            state.increment_evals(num_actual_evals)
+            existing = state.prog_candidate_val_subscores[parent_idx]
+            existing.update(valset_evaluation.scores_by_val_id)
+
     def _run_full_eval_and_add(
         self,
         new_program: dict[str, str],
@@ -650,6 +713,10 @@ class GEPAEngine(Generic[DataId, DataInst, Trajectory, RolloutOutput]):
 
         # 3) Full-valset eval of the selected candidates (one batched, read-only call).
         valset_evals = self._evaluate_programs_on_valset([p.candidate for p in selected], state)
+
+        # 3b) Opt-in: refresh the parents on the same batch, so a subset policy
+        #     can compare parent and child on identical ids.
+        self._reeval_parents_if_requested(selected, state)
 
         # 4) Add each selected candidate to the pool, in order.
         any_accepted = False
@@ -1077,6 +1144,16 @@ class GEPAEngine(Generic[DataId, DataInst, Trajectory, RolloutOutput]):
             use_cloudpickle=self.use_cloudpickle,
             write_agent_state=self.write_agent_state,
         )
+
+        # Give the policy a chance to settle any end-of-run bookkeeping before we
+        # ask it which candidate is best. A policy that decides "best" per
+        # iteration (e.g. the APEX rank-sensitive policy, whose Algorithm 1 line
+        # 16 comparison runs at the start of each iteration) would otherwise
+        # never judge the candidates added in the final iteration. Probed with
+        # getattr, so policies without the hook are unaffected.
+        finalize = getattr(self.val_evaluation_policy, "finalize", None)
+        if callable(finalize):
+            finalize(state)
 
         # Notify optimization end
         best_candidate_idx = self.val_evaluation_policy.get_best_program(state)

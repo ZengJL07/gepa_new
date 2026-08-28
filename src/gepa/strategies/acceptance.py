@@ -64,3 +64,27 @@ class ImprovementOrEqualAcceptance:
         old_sum = sum(proposal.subsample_scores_before or [])
         new_sum = sum(proposal.subsample_scores_after or [])
         return new_sum >= old_sum
+
+
+class AlwaysAcceptance:
+    """Accept every proposal, leaving the decision to the selection stage.
+
+    GEPA gates a proposal twice: first on its minibatch (this criterion), and
+    again on the valset when the engine adds it to the pool. For an optimizer
+    whose own algorithm decides acceptance on the validation side, that first
+    gate is an extra, earlier decision the algorithm never asked for -- and one
+    taken on ``m`` examples rather than the ``N`` its comparison is defined over.
+
+    APEX is such an optimizer: Algorithm 1 evaluates ``P_new`` and ``P_curr`` on
+    a shared ``D_eval`` (line 15) and keeps the winner (lines 16-17), with no
+    minibatch test anywhere. Worse, the minibatch is drawn from the parent's own
+    failures (Eq. 8), so a candidate that improves overall while still missing
+    those particular examples is discarded before the comparison it should have
+    been judged by ever runs.
+
+    Pair this with a selection strategy that does the real filtering; using it
+    with GEPA's default selection would accept everything unconditionally.
+    """
+
+    def should_accept(self, proposal: CandidateProposal, state: GEPAState) -> bool:
+        return True
