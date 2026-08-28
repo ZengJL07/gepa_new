@@ -1,0 +1,3061 @@
+{
+ "name": "hmmt_captransfer",
+ "run_dir": "examples/aime_math/test/hmmt_formal/gepa_captransfer/t_0.2/run_seed_42",
+ "dataset": "hmmt",
+ "seed": 42,
+ "n_train": 30,
+ "n_val": 33,
+ "n_iterations": 13,
+ "n_candidates": 21,
+ "total_metric_calls": 1023,
+ "candidates": [
+  {
+   "idx": 0,
+   "val_avg": 0.2727272727272727,
+   "parents": [
+    null
+   ],
+   "iteration_id": "seed",
+   "metric_calls_at_discovery": 0,
+   "train_scores": {
+    "0": 0.0,
+    "1": 1.0,
+    "4": 0.0,
+    "6": 0.0,
+    "7": 0.0,
+    "8": 1.0,
+    "10": 0.0,
+    "11": 0.0,
+    "12": 0.0,
+    "14": 0.0,
+    "15": 0.0,
+    "16": 1.0,
+    "18": 0.0,
+    "19": 0.0,
+    "20": 0.0,
+    "22": 1.0,
+    "25": 1.0,
+    "26": 0.0,
+    "28": 1.0,
+    "29": 1.0
+   },
+   "val_scores": {
+    "0": 0.0,
+    "1": 1.0,
+    "2": 1.0,
+    "3": 0.0,
+    "4": 1.0,
+    "5": 1.0,
+    "6": 0.0,
+    "7": 1.0,
+    "8": 0.0,
+    "9": 1.0,
+    "10": 0.0,
+    "11": 0.0,
+    "12": 1.0,
+    "13": 0.0,
+    "14": 1.0,
+    "15": 0.0,
+    "16": 0.0,
+    "17": 0.0,
+    "18": 0.0,
+    "19": 0.0,
+    "20": 0.0,
+    "21": 1.0,
+    "22": 0.0,
+    "23": 0.0,
+    "24": 0.0,
+    "25": 0.0,
+    "26": 0.0,
+    "27": 0.0,
+    "28": 0.0,
+    "29": 0.0,
+    "30": 0.0,
+    "31": 0.0,
+    "32": 0.0
+   },
+   "text": "Solve the math problem carefully. Break down the steps and provide the final answer."
+  },
+  {
+   "idx": 1,
+   "val_avg": 0.18181818181818182,
+   "parents": [
+    0
+   ],
+   "iteration_id": "cc14aff7",
+   "metric_calls_at_discovery": 63,
+   "train_scores": {
+    "0": 0.0,
+    "3": 0.0,
+    "4": 1.0,
+    "6": 0.0,
+    "10": 0.0,
+    "11": 0.0,
+    "14": 0.0,
+    "16": 0.0,
+    "17": 0.0,
+    "27": 0.0,
+    "28": 1.0,
+    "29": 0.0
+   },
+   "val_scores": {
+    "0": 0.0,
+    "1": 1.0,
+    "2": 0.0,
+    "3": 0.0,
+    "4": 1.0,
+    "5": 0.0,
+    "6": 0.0,
+    "7": 0.0,
+    "8": 0.0,
+    "9": 0.0,
+    "10": 0.0,
+    "11": 0.0,
+    "12": 1.0,
+    "13": 1.0,
+    "14": 0.0,
+    "15": 0.0,
+    "16": 0.0,
+    "17": 0.0,
+    "18": 0.0,
+    "19": 0.0,
+    "20": 1.0,
+    "21": 0.0,
+    "22": 0.0,
+    "23": 0.0,
+    "24": 0.0,
+    "25": 0.0,
+    "26": 0.0,
+    "27": 1.0,
+    "28": 0.0,
+    "29": 0.0,
+    "30": 0.0,
+    "31": 0.0,
+    "32": 0.0
+   },
+   "text": "Solve the math problem as concisely as possible. Keep your reasoning very short\u2014no more than a few lines. Then, output a JSON object with an \"answer\" field containing the final answer in valid LaTeX. If there are multiple values, separate them with commas. Use standard LaTeX commands (e.g., \\sqrt{10}). Do not output any text beyond the JSON."
+  },
+  {
+   "idx": 2,
+   "val_avg": 0.6363636363636364,
+   "parents": [
+    0
+   ],
+   "iteration_id": "ef74e807",
+   "metric_calls_at_discovery": 123,
+   "train_scores": {
+    "0": 0.0,
+    "2": 1.0,
+    "4": 1.0,
+    "5": 1.0,
+    "15": 1.0,
+    "25": 1.0,
+    "26": 1.0,
+    "27": 0.0
+   },
+   "val_scores": {
+    "0": 1.0,
+    "1": 1.0,
+    "2": 1.0,
+    "3": 1.0,
+    "4": 1.0,
+    "5": 1.0,
+    "6": 0.0,
+    "7": 1.0,
+    "8": 0.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0,
+    "13": 1.0,
+    "14": 1.0,
+    "15": 1.0,
+    "16": 0.0,
+    "17": 0.0,
+    "18": 0.0,
+    "19": 0.0,
+    "20": 1.0,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 0.0,
+    "24": 0.0,
+    "25": 1.0,
+    "26": 1.0,
+    "27": 1.0,
+    "28": 0.0,
+    "29": 0.0,
+    "30": 1.0,
+    "31": 0.0,
+    "32": 0.0
+   },
+   "text": "Solve the math problem step-by-step. Then, output the final answer on a new line as a plain LaTeX string. Use proper LaTeX math mode: \\sqrt{} for square roots, \\frac{}{} for fractions, etc. Do NOT wrap the answer in JSON, quotation marks, or any extra text. The final answer must exactly match the expression that would appear inside a \\boxed{} command."
+  },
+  {
+   "idx": 3,
+   "val_avg": 0.6060606060606061,
+   "parents": [
+    1
+   ],
+   "iteration_id": "ef74e807-1",
+   "metric_calls_at_discovery": 153,
+   "train_scores": {
+    "3": 0.0,
+    "7": 1.0,
+    "10": 0.0,
+    "17": 1.0,
+    "20": 0.0,
+    "27": 1.0
+   },
+   "val_scores": {
+    "0": 1.0,
+    "1": 1.0,
+    "2": 1.0,
+    "3": 0.0,
+    "4": 1.0,
+    "5": 1.0,
+    "6": 0.0,
+    "7": 1.0,
+    "8": 0.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0,
+    "13": 1.0,
+    "14": 1.0,
+    "15": 0.0,
+    "16": 0.0,
+    "17": 1.0,
+    "18": 0.0,
+    "19": 0.0,
+    "20": 1.0,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 0.0,
+    "24": 0.0,
+    "25": 1.0,
+    "26": 1.0,
+    "27": 1.0,
+    "28": 0.0,
+    "29": 0.0,
+    "30": 1.0,
+    "31": 0.0,
+    "32": 0.0
+   },
+   "text": "Solve the math problem. Output only the final answer as a valid LaTeX expression. Do not include any reasoning, steps, or additional text. Use standard LaTeX commands (e.g., \\sqrt{10}, \\frac{a}{b}). If there are multiple values, separate them with commas."
+  },
+  {
+   "idx": 4,
+   "val_avg": 0.2727272727272727,
+   "parents": [
+    1
+   ],
+   "iteration_id": "ef74e807-2",
+   "metric_calls_at_discovery": 183,
+   "train_scores": {
+    "1": 0.0,
+    "4": 1.0,
+    "6": 1.0,
+    "8": 0.0,
+    "12": 0.0,
+    "15": 0.0,
+    "16": 0.0,
+    "17": 0.0,
+    "18": 0.0,
+    "19": 0.0,
+    "20": 1.0,
+    "22": 0.0,
+    "26": 1.0,
+    "29": 0.0
+   },
+   "val_scores": {
+    "0": 1.0,
+    "1": 0.0,
+    "2": 0.0,
+    "3": 0.0,
+    "4": 0.0,
+    "5": 1.0,
+    "6": 1.0,
+    "7": 0.0,
+    "8": 0.0,
+    "9": 0.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 0.0,
+    "13": 1.0,
+    "14": 0.0,
+    "15": 0.0,
+    "16": 0.0,
+    "17": 0.0,
+    "18": 0.0,
+    "19": 0.0,
+    "20": 0.0,
+    "21": 0.0,
+    "22": 0.0,
+    "23": 0.0,
+    "24": 0.0,
+    "25": 0.0,
+    "26": 1.0,
+    "27": 1.0,
+    "28": 0.0,
+    "29": 0.0,
+    "30": 1.0,
+    "31": 0.0,
+    "32": 0.0
+   },
+   "text": "Solve the math problem concisely. Use brief reasoning (a few lines at most) to arrive at the answer, then output only the final answer in valid LaTeX. Do not include any additional text, JSON, or formatting\u2014just the LaTeX expression."
+  },
+  {
+   "idx": 5,
+   "val_avg": 0.30303030303030304,
+   "parents": [
+    1
+   ],
+   "iteration_id": "ef74e807-3",
+   "metric_calls_at_discovery": 213,
+   "train_scores": {
+    "11": 1.0,
+    "14": 0.0,
+    "28": 1.0
+   },
+   "val_scores": {
+    "0": 1.0,
+    "1": 0.0,
+    "2": 0.0,
+    "3": 1.0,
+    "4": 0.0,
+    "5": 1.0,
+    "6": 0.0,
+    "7": 1.0,
+    "8": 0.0,
+    "9": 0.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 0.0,
+    "13": 1.0,
+    "14": 0.0,
+    "15": 0.0,
+    "16": 0.0,
+    "17": 0.0,
+    "18": 0.0,
+    "19": 0.0,
+    "20": 0.0,
+    "21": 0.0,
+    "22": 1.0,
+    "23": 0.0,
+    "24": 0.0,
+    "25": 0.0,
+    "26": 0.0,
+    "27": 1.0,
+    "28": 1.0,
+    "29": 0.0,
+    "30": 0.0,
+    "31": 0.0,
+    "32": 0.0
+   },
+   "text": "Solve the math problem. Your response must contain only the final answer in valid LaTeX. Do not include any reasoning, explanation, or JSON formatting. Use standard LaTeX commands (e.g., \\sqrt{10}). If there are multiple values, separate them with commas."
+  },
+  {
+   "idx": 6,
+   "val_avg": 0.6363636363636364,
+   "parents": [
+    4
+   ],
+   "iteration_id": "b868105b",
+   "metric_calls_at_discovery": 273,
+   "train_scores": {
+    "11": 1.0,
+    "13": 1.0,
+    "15": 1.0,
+    "17": 1.0,
+    "19": 1.0,
+    "21": 1.0,
+    "24": 1.0,
+    "26": 1.0,
+    "27": 1.0
+   },
+   "val_scores": {
+    "0": 1.0,
+    "1": 1.0,
+    "2": 1.0,
+    "3": 1.0,
+    "4": 1.0,
+    "5": 1.0,
+    "6": 0.0,
+    "7": 1.0,
+    "8": 0.0,
+    "9": 0.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0,
+    "13": 1.0,
+    "14": 1.0,
+    "15": 1.0,
+    "16": 0.0,
+    "17": 1.0,
+    "18": 0.0,
+    "19": 0.0,
+    "20": 1.0,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 0.0,
+    "24": 0.0,
+    "25": 1.0,
+    "26": 1.0,
+    "27": 1.0,
+    "28": 0.0,
+    "29": 0.0,
+    "30": 1.0,
+    "31": 0.0,
+    "32": 0.0
+   },
+   "text": "Solve the math problem concisely. Use brief reasoning, then output only the final answer as a raw LaTeX string. Do not enclose the answer in $...$ or \\(...\\). For example, output \\sqrt{6} instead of \\(\\sqrt{6}\\) and 20 instead of $20$. Do not include any other text."
+  },
+  {
+   "idx": 7,
+   "val_avg": 0.6060606060606061,
+   "parents": [
+    2
+   ],
+   "iteration_id": "b868105b-1",
+   "metric_calls_at_discovery": 303,
+   "train_scores": {
+    "3": 1.0,
+    "4": 1.0,
+    "6": 1.0,
+    "8": 0.0,
+    "9": 1.0,
+    "23": 1.0,
+    "25": 1.0,
+    "27": 1.0,
+    "29": 1.0
+   },
+   "val_scores": {
+    "0": 1.0,
+    "1": 1.0,
+    "2": 1.0,
+    "3": 1.0,
+    "4": 1.0,
+    "5": 1.0,
+    "6": 0.0,
+    "7": 1.0,
+    "8": 0.0,
+    "9": 1.0,
+    "10": 0.0,
+    "11": 1.0,
+    "12": 1.0,
+    "13": 1.0,
+    "14": 1.0,
+    "15": 0.0,
+    "16": 0.0,
+    "17": 0.0,
+    "18": 0.0,
+    "19": 0.0,
+    "20": 1.0,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 0.0,
+    "24": 0.0,
+    "25": 1.0,
+    "26": 0.0,
+    "27": 1.0,
+    "28": 1.0,
+    "29": 0.0,
+    "30": 1.0,
+    "31": 1.0,
+    "32": 0.0
+   },
+   "text": "Solve the math problem step-by-step. Then, on a new line, output only the final answer as a plain LaTeX string. Do not wrap the answer in \\boxed{}, quotation marks, or any other characters. Use proper LaTeX math mode: \\sqrt{} for square roots, \\frac{}{} for fractions, etc. For example, if the answer is 8\\sqrt{10}, output exactly: 8\\sqrt{10}. If the answer is an integer like 103, output exactly: 103."
+  },
+  {
+   "idx": 8,
+   "val_avg": 0.6060606060606061,
+   "parents": [
+    4
+   ],
+   "iteration_id": "b868105b-2",
+   "metric_calls_at_discovery": 333,
+   "train_scores": {
+    "0": 0.0,
+    "1": 1.0,
+    "2": 1.0,
+    "3": 1.0,
+    "5": 1.0,
+    "6": 1.0,
+    "8": 0.0,
+    "9": 1.0,
+    "10": 1.0,
+    "13": 1.0,
+    "15": 1.0,
+    "17": 1.0,
+    "18": 1.0,
+    "19": 1.0,
+    "20": 1.0,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 1.0,
+    "24": 1.0,
+    "25": 1.0,
+    "26": 1.0,
+    "27": 1.0,
+    "28": 1.0,
+    "29": 1.0
+   },
+   "val_scores": {
+    "0": 1.0,
+    "1": 1.0,
+    "2": 1.0,
+    "3": 1.0,
+    "4": 0.0,
+    "5": 1.0,
+    "6": 0.0,
+    "7": 1.0,
+    "8": 0.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0,
+    "13": 1.0,
+    "14": 1.0,
+    "15": 0.0,
+    "16": 0.0,
+    "17": 0.0,
+    "18": 1.0,
+    "19": 0.0,
+    "20": 1.0,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 0.0,
+    "24": 0.0,
+    "25": 1.0,
+    "26": 0.0,
+    "27": 1.0,
+    "28": 0.0,
+    "29": 0.0,
+    "30": 1.0,
+    "31": 1.0,
+    "32": 0.0
+   },
+   "text": "Solve the math problem concisely. Keep your reasoning extremely brief (at most 3 sentences). Then output only the final answer. The answer must be a plain number or a simple LaTeX expression (e.g., 29, \\frac{4}{9}) with no extra formatting like \\boxed{} or \\(...\\). Do not include any other text."
+  },
+  {
+   "idx": 9,
+   "val_avg": 0.5757575757575758,
+   "parents": [
+    4
+   ],
+   "iteration_id": "dbe17327",
+   "metric_calls_at_discovery": 393,
+   "train_scores": {
+    "0": 0.0,
+    "1": 0.0,
+    "2": 1.0,
+    "5": 0.0,
+    "6": 1.0,
+    "7": 0.0,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 1.0,
+    "12": 0.0,
+    "13": 1.0,
+    "14": 0.0,
+    "15": 1.0,
+    "17": 1.0,
+    "19": 1.0,
+    "23": 1.0,
+    "27": 1.0
+   },
+   "val_scores": {
+    "0": 1.0,
+    "1": 0.0,
+    "2": 1.0,
+    "3": 1.0,
+    "4": 1.0,
+    "5": 1.0,
+    "6": 0.0,
+    "7": 1.0,
+    "8": 0.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 0.0,
+    "12": 0.0,
+    "13": 1.0,
+    "14": 1.0,
+    "15": 0.0,
+    "16": 0.0,
+    "17": 0.0,
+    "18": 0.0,
+    "19": 1.0,
+    "20": 1.0,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 0.0,
+    "24": 1.0,
+    "25": 1.0,
+    "26": 0.0,
+    "27": 1.0,
+    "28": 0.0,
+    "29": 0.0,
+    "30": 1.0,
+    "31": 1.0,
+    "32": 0.0
+   },
+   "text": "Solve the following math problem. Keep your reasoning extremely short \u2014 no more than 100 words total. Then output the final answer exactly as a raw LaTeX string (e.g., 200, \\frac{1}{576}, \\sqrt{3}), without any \\boxed{}, \\text{}, or other formatting. The entire response must end with that LaTeX expression, and nothing else after it. Do not output JSON or any extra text."
+  },
+  {
+   "idx": 10,
+   "val_avg": 0.6363636363636364,
+   "parents": [
+    4
+   ],
+   "iteration_id": "5b30ca96",
+   "metric_calls_at_discovery": 453,
+   "train_scores": {
+    "4": 1.0,
+    "7": 0.0,
+    "15": 1.0,
+    "16": 1.0,
+    "17": 1.0,
+    "18": 0.0,
+    "20": 0.0,
+    "21": 1.0,
+    "22": 1.0,
+    "25": 1.0,
+    "28": 1.0
+   },
+   "val_scores": {
+    "0": 1.0,
+    "1": 1.0,
+    "2": 1.0,
+    "3": 1.0,
+    "4": 1.0,
+    "5": 1.0,
+    "6": 0.0,
+    "7": 1.0,
+    "8": 0.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0,
+    "13": 1.0,
+    "14": 1.0,
+    "15": 1.0,
+    "16": 0.0,
+    "17": 1.0,
+    "18": 0.0,
+    "19": 0.0,
+    "20": 1.0,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 0.0,
+    "24": 0.0,
+    "25": 1.0,
+    "26": 1.0,
+    "27": 1.0,
+    "28": 0.0,
+    "29": 0.0,
+    "30": 0.0,
+    "31": 0.0,
+    "32": 0.0
+   },
+   "text": "Solve the math problem concisely. Use brief reasoning (a few lines at most) to arrive at the answer. Then, output the final answer as a raw LaTeX string without any surrounding math-mode delimiters such as \\(, \\), $$, or $$. Do not include any additional text or formatting\u2014just the LaTeX expression."
+  },
+  {
+   "idx": 11,
+   "val_avg": 0.5151515151515151,
+   "parents": [
+    9
+   ],
+   "iteration_id": "5b30ca96-1",
+   "metric_calls_at_discovery": 483,
+   "train_scores": {
+    "0": 0.0,
+    "7": 1.0,
+    "10": 1.0
+   },
+   "val_scores": {
+    "0": 0.0,
+    "1": 1.0,
+    "2": 1.0,
+    "3": 1.0,
+    "4": 1.0,
+    "5": 1.0,
+    "6": 0.0,
+    "7": 1.0,
+    "8": 0.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0,
+    "13": 1.0,
+    "14": 1.0,
+    "15": 0.0,
+    "16": 0.0,
+    "17": 0.0,
+    "18": 0.0,
+    "19": 0.0,
+    "20": 1.0,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 0.0,
+    "24": 0.0,
+    "25": 1.0,
+    "26": 0.0,
+    "27": 0.0,
+    "28": 1.0,
+    "29": 0.0,
+    "30": 0.0,
+    "31": 0.0,
+    "32": 0.0
+   },
+   "text": "Solve the following math problem. Keep your reasoning extremely short \u2014 at most 30 words. You MUST end your response with the final answer exactly as a raw LaTeX string (e.g., 200, \\frac{1}{576}, \\sqrt{3}), with no \\boxed{}, \\text{}, or any other formatting. The answer must be the last thing in your response; no trailing spaces, newlines, or text after it. If you exceed the word limit, your answer will be discarded."
+  },
+  {
+   "idx": 12,
+   "val_avg": 0.6363636363636364,
+   "parents": [
+    9
+   ],
+   "iteration_id": "69486835",
+   "metric_calls_at_discovery": 543,
+   "train_scores": {
+    "2": 1.0,
+    "3": 1.0,
+    "5": 1.0,
+    "8": 1.0,
+    "17": 1.0
+   },
+   "val_scores": {
+    "0": 1.0,
+    "1": 1.0,
+    "2": 1.0,
+    "3": 1.0,
+    "4": 1.0,
+    "5": 1.0,
+    "6": 0.0,
+    "7": 1.0,
+    "8": 0.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0,
+    "13": 1.0,
+    "14": 1.0,
+    "15": 0.0,
+    "16": 0.0,
+    "17": 1.0,
+    "18": 0.0,
+    "19": 0.0,
+    "20": 1.0,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 0.0,
+    "24": 0.0,
+    "25": 1.0,
+    "26": 0.0,
+    "27": 1.0,
+    "28": 0.0,
+    "29": 0.0,
+    "30": 1.0,
+    "31": 1.0,
+    "32": 0.0
+   },
+   "text": "Solve the following math problem. Keep your reasoning extremely short \u2014 no more than 100 words total. Then output the final answer exactly as a raw LaTeX string (e.g., 200, \\frac{1}{576}, \\sqrt{3}), without any \\boxed{}, \\text{}, or other formatting. Simplify the expression fully, including rationalizing denominators. The entire response must end with that LaTeX expression, and nothing else after it. Do not output JSON or any extra text."
+  },
+  {
+   "idx": 13,
+   "val_avg": 0.6363636363636364,
+   "parents": [
+    7
+   ],
+   "iteration_id": "105fcb33",
+   "metric_calls_at_discovery": 603,
+   "train_scores": {
+    "1": 1.0,
+    "2": 1.0,
+    "5": 1.0,
+    "7": 0.0,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 0.0,
+    "11": 1.0,
+    "12": 0.0,
+    "13": 1.0,
+    "14": 0.0,
+    "15": 1.0,
+    "16": 1.0,
+    "17": 1.0,
+    "18": 0.0,
+    "20": 0.0,
+    "21": 1.0,
+    "23": 1.0,
+    "24": 1.0,
+    "26": 1.0,
+    "27": 1.0
+   },
+   "val_scores": {
+    "0": 1.0,
+    "1": 1.0,
+    "2": 1.0,
+    "3": 1.0,
+    "4": 1.0,
+    "5": 1.0,
+    "6": 0.0,
+    "7": 0.0,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0,
+    "13": 1.0,
+    "14": 1.0,
+    "15": 0.0,
+    "16": 0.0,
+    "17": 0.0,
+    "18": 0.0,
+    "19": 0.0,
+    "20": 1.0,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 1.0,
+    "24": 0.0,
+    "25": 1.0,
+    "26": 0.0,
+    "27": 1.0,
+    "28": 0.0,
+    "29": 0.0,
+    "30": 1.0,
+    "31": 1.0,
+    "32": 0.0
+   },
+   "text": "Think step-by-step to solve the problem. Show all your reasoning and double-check your work. Then, on a new line, output only the final answer as a plain LaTeX string. Do not wrap the answer in \\boxed{}, quotation marks, or any other characters. Use proper LaTeX math mode: \\sqrt{} for square roots, \\frac{}{} for fractions, etc. For example, if the answer is 8\\sqrt{10}, output exactly: 8\\sqrt{10}. If the answer is an integer like 103, output exactly: 103."
+  },
+  {
+   "idx": 14,
+   "val_avg": 0.5454545454545454,
+   "parents": [
+    4
+   ],
+   "iteration_id": "7f92c5eb",
+   "metric_calls_at_discovery": 663,
+   "train_scores": {
+    "8": 0.0,
+    "17": 1.0,
+    "19": 0.0
+   },
+   "val_scores": {
+    "0": 1.0,
+    "1": 1.0,
+    "2": 1.0,
+    "3": 1.0,
+    "4": 1.0,
+    "5": 1.0,
+    "6": 0.0,
+    "7": 1.0,
+    "8": 0.0,
+    "9": 1.0,
+    "10": 0.0,
+    "11": 1.0,
+    "12": 1.0,
+    "13": 1.0,
+    "14": 1.0,
+    "15": 0.0,
+    "16": 0.0,
+    "17": 1.0,
+    "18": 0.0,
+    "19": 0.0,
+    "20": 1.0,
+    "21": 0.0,
+    "22": 1.0,
+    "23": 0.0,
+    "24": 0.0,
+    "25": 0.0,
+    "26": 0.0,
+    "27": 1.0,
+    "28": 1.0,
+    "29": 0.0,
+    "30": 1.0,
+    "31": 0.0,
+    "32": 0.0
+   },
+   "text": "Solve the math problem concisely. Output only a JSON object with exactly one key: \"answer\". The value must be the final answer as a valid LaTeX mathematical expression (e.g., \"29\" for integers, \"\\\\frac{1}{576}\" for fractions). Do not enclose the answer in \\boxed{} or $\u2026$. Do not include any reasoning, commentary, or additional text\u2014just the JSON object. Ensure the JSON is well\u2011formed and parseable."
+  },
+  {
+   "idx": 15,
+   "val_avg": 0.6060606060606061,
+   "parents": [
+    10
+   ],
+   "iteration_id": "7f92c5eb-1",
+   "metric_calls_at_discovery": 693,
+   "train_scores": {
+    "7": 1.0,
+    "18": 0.0,
+    "22": 1.0
+   },
+   "val_scores": {
+    "0": 1.0,
+    "1": 1.0,
+    "2": 1.0,
+    "3": 1.0,
+    "4": 1.0,
+    "5": 1.0,
+    "6": 0.0,
+    "7": 1.0,
+    "8": 0.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0,
+    "13": 1.0,
+    "14": 1.0,
+    "15": 1.0,
+    "16": 0.0,
+    "17": 0.0,
+    "18": 0.0,
+    "19": 0.0,
+    "20": 0.0,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 0.0,
+    "24": 0.0,
+    "25": 1.0,
+    "26": 1.0,
+    "27": 0.0,
+    "28": 1.0,
+    "29": 0.0,
+    "30": 1.0,
+    "31": 0.0,
+    "32": 0.0
+   },
+   "text": "Provide at most two lines of reasoning. Then, output only the final answer as a raw LaTeX string, with no extra text. Do not use \\(...\\) or $$...$$."
+  },
+  {
+   "idx": 16,
+   "val_avg": 0.6666666666666666,
+   "parents": [
+    13
+   ],
+   "iteration_id": "03767ae1",
+   "metric_calls_at_discovery": 783,
+   "train_scores": {
+    "0": 0.0,
+    "1": 1.0,
+    "3": 1.0,
+    "9": 1.0,
+    "12": 0.0,
+    "16": 1.0,
+    "20": 1.0,
+    "22": 1.0,
+    "23": 1.0,
+    "26": 1.0
+   },
+   "val_scores": {
+    "0": 1.0,
+    "1": 1.0,
+    "2": 0.0,
+    "3": 1.0,
+    "4": 1.0,
+    "5": 1.0,
+    "6": 0.0,
+    "7": 1.0,
+    "8": 0.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 0.0,
+    "13": 1.0,
+    "14": 1.0,
+    "15": 1.0,
+    "16": 1.0,
+    "17": 0.0,
+    "18": 1.0,
+    "19": 0.0,
+    "20": 1.0,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 0.0,
+    "24": 0.0,
+    "25": 1.0,
+    "26": 0.0,
+    "27": 1.0,
+    "28": 1.0,
+    "29": 0.0,
+    "30": 1.0,
+    "31": 1.0,
+    "32": 0.0
+   },
+   "text": "Reason step-by-step concisely (limit reasoning to a few sentences). After reasoning, on a new line, output only the final answer as a plain LaTeX string. Do not wrap the answer in \\boxed{}, quotation marks, or any other characters. Use proper LaTeX math mode: \\sqrt{} for square roots, \\frac{}{} for fractions, etc. For example, if the answer is 8\\sqrt{10}, output exactly: 8\\sqrt{10}. If the answer is an integer like 103, output exactly: 103. Important: The final answer must appear in the text output and must not be left empty. Never allow your reasoning to crowd out the final answer."
+  },
+  {
+   "idx": 17,
+   "val_avg": 0.696969696969697,
+   "parents": [
+    4
+   ],
+   "iteration_id": "1affcb4c",
+   "metric_calls_at_discovery": 843,
+   "train_scores": {
+    "2": 1.0,
+    "4": 1.0,
+    "5": 1.0,
+    "7": 1.0,
+    "13": 1.0,
+    "15": 1.0,
+    "17": 1.0,
+    "18": 1.0,
+    "22": 1.0,
+    "25": 1.0,
+    "28": 1.0,
+    "29": 1.0
+   },
+   "val_scores": {
+    "0": 1.0,
+    "1": 1.0,
+    "2": 1.0,
+    "3": 1.0,
+    "4": 1.0,
+    "5": 1.0,
+    "6": 0.0,
+    "7": 1.0,
+    "8": 0.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0,
+    "13": 1.0,
+    "14": 1.0,
+    "15": 1.0,
+    "16": 0.0,
+    "17": 1.0,
+    "18": 0.0,
+    "19": 0.0,
+    "20": 1.0,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 0.0,
+    "24": 0.0,
+    "25": 1.0,
+    "26": 1.0,
+    "27": 1.0,
+    "28": 1.0,
+    "29": 0.0,
+    "30": 1.0,
+    "31": 0.0,
+    "32": 0.0
+   },
+   "text": "Solve the math problem concisely. Use brief reasoning (a few lines at most) to arrive at the answer, then output only the final answer as a raw LaTeX expression. Do not wrap the answer in any math mode delimiters such as \\(, \\), $$, or $$. Do not include any additional text, JSON, or formatting\u2014just the raw LaTeX expression."
+  },
+  {
+   "idx": 18,
+   "val_avg": 0.3333333333333333,
+   "parents": [
+    13
+   ],
+   "iteration_id": "1affcb4c-1",
+   "metric_calls_at_discovery": 873,
+   "train_scores": {
+    "2": 0.0,
+    "7": 1.0,
+    "18": 1.0
+   },
+   "val_scores": {
+    "0": 0.0,
+    "1": 1.0,
+    "2": 0.0,
+    "3": 1.0,
+    "4": 0.0,
+    "5": 0.0,
+    "6": 0.0,
+    "7": 1.0,
+    "8": 0.0,
+    "9": 1.0,
+    "10": 0.0,
+    "11": 0.0,
+    "12": 0.0,
+    "13": 1.0,
+    "14": 1.0,
+    "15": 0.0,
+    "16": 0.0,
+    "17": 0.0,
+    "18": 1.0,
+    "19": 0.0,
+    "20": 0.0,
+    "21": 1.0,
+    "22": 0.0,
+    "23": 0.0,
+    "24": 0.0,
+    "25": 1.0,
+    "26": 0.0,
+    "27": 1.0,
+    "28": 0.0,
+    "29": 0.0,
+    "30": 1.0,
+    "31": 0.0,
+    "32": 0.0
+   },
+   "text": "Think step-by-step to solve the problem. Provide a concise solution that includes only the essential steps and avoids lengthy digressions. Ensure your reasoning is brief enough to stay within limits. After your reasoning, on a new line, output the final answer as a plain LaTeX string. Do not wrap the answer in \\boxed{}, quotation marks, or any other characters. Use proper LaTeX math mode: \\sqrt{} for square roots, \\frac{}{} for fractions, etc. For example, if the answer is 8\\sqrt{10}, output exactly: 8\\sqrt{10}. If the answer is an integer like 103, output exactly: 103."
+  },
+  {
+   "idx": 19,
+   "val_avg": 0.6363636363636364,
+   "parents": [
+    13
+   ],
+   "iteration_id": "44035922",
+   "metric_calls_at_discovery": 933,
+   "train_scores": {
+    "7": 1.0,
+    "17": 1.0,
+    "18": 0.0
+   },
+   "val_scores": {
+    "0": 1.0,
+    "1": 1.0,
+    "2": 1.0,
+    "3": 1.0,
+    "4": 1.0,
+    "5": 1.0,
+    "6": 0.0,
+    "7": 1.0,
+    "8": 0.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 0.0,
+    "12": 1.0,
+    "13": 1.0,
+    "14": 1.0,
+    "15": 0.0,
+    "16": 0.0,
+    "17": 1.0,
+    "18": 0.0,
+    "19": 0.0,
+    "20": 1.0,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 0.0,
+    "24": 0.0,
+    "25": 1.0,
+    "26": 0.0,
+    "27": 1.0,
+    "28": 1.0,
+    "29": 0.0,
+    "30": 1.0,
+    "31": 1.0,
+    "32": 0.0
+   },
+   "text": "Think step-by-step to solve the problem. Be concise: keep your reasoning short and to the point. After reasoning, on a new line, output only the final answer as a plain LaTeX string. Do not wrap the answer in \\boxed{}, quotation marks, or any other characters. Use proper LaTeX math mode: \\sqrt{} for square roots, \\frac{}{} for fractions, etc. For example, if the answer is 8\\sqrt{10}, output exactly: 8\\sqrt{10}. If the answer is an integer like 103, output exactly: 103."
+  },
+  {
+   "idx": 20,
+   "val_avg": 0.6666666666666666,
+   "parents": [
+    4
+   ],
+   "iteration_id": "44035922-1",
+   "metric_calls_at_discovery": 963,
+   "train_scores": {
+    "4": 1.0,
+    "15": 1.0,
+    "20": 1.0
+   },
+   "val_scores": {
+    "0": 1.0,
+    "1": 1.0,
+    "2": 1.0,
+    "3": 1.0,
+    "4": 1.0,
+    "5": 1.0,
+    "6": 0.0,
+    "7": 1.0,
+    "8": 0.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0,
+    "13": 1.0,
+    "14": 1.0,
+    "15": 1.0,
+    "16": 0.0,
+    "17": 0.0,
+    "18": 0.0,
+    "19": 0.0,
+    "20": 1.0,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 0.0,
+    "24": 0.0,
+    "25": 1.0,
+    "26": 1.0,
+    "27": 1.0,
+    "28": 1.0,
+    "29": 0.0,
+    "30": 1.0,
+    "31": 0.0,
+    "32": 0.0
+   },
+   "text": "Solve the math problem concisely. Use brief reasoning (a few lines at most) to arrive at the answer, then output only the final answer. The final answer must be a valid LaTeX math expression strictly without any surrounding delimiters such as \\(, \\), $$, or $. Do not include any additional text, JSON, or formatting\u2014just the bare LaTeX expression (e.g., \\sqrt{6}, 8\\sqrt{10}, \\frac{2025}{101}). Never enclose the answer in math mode delimiters."
+  }
+ ],
+ "rejected_proposal_train_scores": {
+  "04317bda5761568b": {
+   "6": 1.0,
+   "12": 0.0,
+   "14": 0.0
+  },
+  "628d16aba6ef0e9b": {
+   "2": 1.0,
+   "15": 1.0,
+   "17": 1.0
+  },
+  "a0ca636fd2eac0a7": {
+   "7": 0.0,
+   "8": 1.0,
+   "17": 1.0
+  },
+  "fb0829adf8ae8b62": {
+   "7": 0.0,
+   "28": 0.0,
+   "29": 0.0
+  },
+  "6e001b5b5e35c36b": {
+   "7": 0.0,
+   "15": 1.0,
+   "27": 1.0
+  },
+  "a142dd80bd6b9f2c": {
+   "4": 1.0,
+   "16": 1.0,
+   "28": 1.0
+  },
+  "fe01aa5bddcd2a26": {
+   "6": 1.0,
+   "15": 1.0,
+   "27": 1.0
+  },
+  "3670d0688b444cff": {
+   "11": 1.0,
+   "19": 1.0,
+   "27": 1.0
+  },
+  "fe073f15526f085c": {
+   "6": 1.0,
+   "9": 1.0,
+   "23": 1.0
+  },
+  "b719b5f9e934f641": {
+   "11": 1.0,
+   "13": 1.0,
+   "24": 1.0
+  },
+  "70944d68b5b45d67": {
+   "11": 0.0,
+   "14": 0.0,
+   "16": 0.0
+  },
+  "4526639f7b23acfd": {
+   "8": 0.0,
+   "18": 0.0,
+   "20": 0.0
+  },
+  "0d20ae9ccb11e78a": {
+   "13": 1.0,
+   "21": 1.0,
+   "24": 1.0
+  },
+  "5d3dc00b83e1eb00": {
+   "3": 1.0,
+   "5": 1.0,
+   "8": 1.0
+  },
+  "934c1ae521fdaa74": {
+   "3": 1.0,
+   "6": 1.0,
+   "29": 1.0
+  },
+  "75a7621caafd6387": {
+   "18": 0.0,
+   "22": 0.0,
+   "26": 0.0
+  },
+  "bd72518e9fcca56b": {
+   "1": 0.0,
+   "5": 1.0,
+   "20": 1.0
+  },
+  "3f411c90d0d87215": {
+   "1": 1.0,
+   "14": 0.0,
+   "27": 0.0
+  },
+  "f667103562dd4579": {
+   "9": 1.0,
+   "15": 1.0,
+   "23": 1.0
+  },
+  "165bec4b3516ffa7": {
+   "7": 1.0,
+   "18": 0.0,
+   "28": 1.0
+  },
+  "2eea4f08b23c31d1": {
+   "20": 1.0,
+   "22": 1.0,
+   "26": 1.0
+  },
+  "68eb37de8758ed74": {
+   "7": 0.0,
+   "11": 1.0,
+   "17": 1.0
+  },
+  "e5e9ea27af5a6070": {
+   "6": 0.0,
+   "22": 0.0,
+   "25": 0.0
+  },
+  "4f5dd973b4ac76aa": {
+   "1": 0.0,
+   "12": 0.0,
+   "19": 0.0
+  },
+  "b424c317b0be875c": {
+   "0": 0.0,
+   "28": 1.0,
+   "29": 0.0
+  },
+  "a8c7d7cfad799a2f": {
+   "22": 1.0,
+   "25": 1.0,
+   "29": 1.0
+  },
+  "b6b4b34c9be127eb": {
+   "3": 0.0,
+   "5": 0.0,
+   "27": 1.0
+  },
+  "1dbeed55353348db": {
+   "2": 1.0,
+   "13": 1.0,
+   "15": 1.0
+  },
+  "bac7bcc9a7f0a187": {
+   "5": 1.0,
+   "24": 1.0,
+   "26": 0.0
+  },
+  "48a8265394e8f84c": {
+   "8": 1.0,
+   "10": 0.0,
+   "21": 1.0
+  },
+  "42e17525bf593c14": {
+   "6": 1.0,
+   "19": 1.0,
+   "27": 1.0
+  },
+  "265cb24689b157c1": {
+   "4": 1.0,
+   "20": 1.0,
+   "21": 0.0
+  },
+  "f2e34bb539bc2d8a": {
+   "11": 1.0,
+   "12": 0.0,
+   "14": 0.0
+  },
+  "2f10044ad35174f5": {
+   "18": 0.0,
+   "22": 1.0,
+   "25": 1.0
+  },
+  "b445ccd721539e5c": {
+   "19": 1.0,
+   "21": 1.0,
+   "25": 1.0
+  },
+  "913827e06d255280": {
+   "1": 1.0,
+   "3": 1.0,
+   "16": 0.0
+  },
+  "15518d9f7cc01e8c": {
+   "13": 1.0,
+   "21": 1.0,
+   "24": 1.0
+  },
+  "0094423186b1296a": {
+   "13": 1.0,
+   "24": 0.0,
+   "26": 1.0
+  },
+  "c0d2327d23e215a6": {
+   "15": 1.0,
+   "17": 1.0,
+   "20": 0.0
+  },
+  "28258ba2d6bccbb2": {
+   "0": 0.0,
+   "2": 1.0,
+   "5": 1.0
+  },
+  "362912127929a9c3": {
+   "9": 1.0,
+   "10": 0.0,
+   "23": 1.0
+  },
+  "9a5347b8556c44d3": {
+   "2": 1.0,
+   "5": 1.0,
+   "13": 1.0
+  },
+  "7a7944ae44a9f3c0": {
+   "0": 0.0,
+   "9": 1.0,
+   "23": 1.0
+  },
+  "c02cda97a0a40e43": {
+   "7": 0.0,
+   "10": 0.0,
+   "20": 0.0
+  }
+ },
+ "iterations": [
+  {
+   "i": 0,
+   "iteration_id": "cc14aff7",
+   "n_tasks": 5,
+   "accepted_candidate_idxs": [
+    1
+   ],
+   "tasks": [
+    {
+     "parent_idx": 0,
+     "subsample_ids": [
+      19,
+      1,
+      12
+     ],
+     "subsample_scores": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "new_subsample_scores": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "parent_idx": 0,
+     "subsample_ids": [
+      11,
+      14,
+      16
+     ],
+     "subsample_scores": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "parent_idx": 0,
+     "subsample_ids": [
+      7,
+      29,
+      28
+     ],
+     "subsample_scores": [
+      0.0,
+      1.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "parent_idx": 0,
+     "subsample_ids": [
+      10,
+      4,
+      0
+     ],
+     "subsample_scores": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "new_subsample_scores": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "parent_idx": 0,
+     "subsample_ids": [
+      6,
+      25,
+      22
+     ],
+     "subsample_scores": [
+      0.0,
+      1.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    }
+   ]
+  },
+  {
+   "i": 1,
+   "iteration_id": "ef74e807",
+   "n_tasks": 5,
+   "accepted_candidate_idxs": [
+    2,
+    3,
+    4,
+    5
+   ],
+   "tasks": [
+    {
+     "parent_idx": 0,
+     "subsample_ids": [
+      4,
+      15,
+      26
+     ],
+     "subsample_scores": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    },
+    {
+     "parent_idx": 1,
+     "subsample_ids": [
+      17,
+      27,
+      3
+     ],
+     "subsample_scores": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "parent_idx": 0,
+     "subsample_ids": [
+      20,
+      8,
+      18
+     ],
+     "subsample_scores": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "new_subsample_scores": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "parent_idx": 1,
+     "subsample_ids": [
+      29,
+      16,
+      6
+     ],
+     "subsample_scores": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "new_subsample_scores": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "parent_idx": 1,
+     "subsample_ids": [
+      28,
+      11,
+      14
+     ],
+     "subsample_scores": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      1.0,
+      0.0
+     ]
+    }
+   ]
+  },
+  {
+   "i": 2,
+   "iteration_id": "b868105b",
+   "n_tasks": 5,
+   "accepted_candidate_idxs": [
+    6,
+    7,
+    8
+   ],
+   "tasks": [
+    {
+     "parent_idx": 4,
+     "subsample_ids": [
+      26,
+      15,
+      17
+     ],
+     "subsample_scores": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    },
+    {
+     "parent_idx": 2,
+     "subsample_ids": [
+      4,
+      27,
+      25
+     ],
+     "subsample_scores": [
+      1.0,
+      0.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    },
+    {
+     "parent_idx": 4,
+     "subsample_ids": [
+      8,
+      22,
+      18
+     ],
+     "subsample_scores": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "new_subsample_scores": [
+      0.0,
+      1.0,
+      1.0
+     ]
+    },
+    {
+     "parent_idx": 3,
+     "subsample_ids": [
+      10,
+      7,
+      20
+     ],
+     "subsample_scores": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "new_subsample_scores": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "parent_idx": 2,
+     "subsample_ids": [
+      0,
+      2,
+      5
+     ],
+     "subsample_scores": [
+      0.0,
+      1.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      0.0,
+      1.0,
+      1.0
+     ]
+    }
+   ]
+  },
+  {
+   "i": 3,
+   "iteration_id": "dbe17327",
+   "n_tasks": 5,
+   "accepted_candidate_idxs": [
+    9
+   ],
+   "tasks": [
+    {
+     "parent_idx": 8,
+     "subsample_ids": [
+      15,
+      17,
+      2
+     ],
+     "subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    },
+    {
+     "parent_idx": 8,
+     "subsample_ids": [
+      5,
+      27,
+      3
+     ],
+     "subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "parent_idx": 4,
+     "subsample_ids": [
+      18,
+      26,
+      22
+     ],
+     "subsample_scores": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "new_subsample_scores": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "parent_idx": 4,
+     "subsample_ids": [
+      12,
+      19,
+      1
+     ],
+     "subsample_scores": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "new_subsample_scores": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "parent_idx": 6,
+     "subsample_ids": [
+      13,
+      21,
+      24
+     ],
+     "subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    }
+   ]
+  },
+  {
+   "i": 4,
+   "iteration_id": "5b30ca96",
+   "n_tasks": 5,
+   "accepted_candidate_idxs": [
+    10,
+    11
+   ],
+   "tasks": [
+    {
+     "parent_idx": 8,
+     "subsample_ids": [
+      21,
+      13,
+      24
+     ],
+     "subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    },
+    {
+     "parent_idx": 4,
+     "subsample_ids": [
+      15,
+      17,
+      4
+     ],
+     "subsample_scores": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    },
+    {
+     "parent_idx": 8,
+     "subsample_ids": [
+      23,
+      9,
+      6
+     ],
+     "subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    },
+    {
+     "parent_idx": 6,
+     "subsample_ids": [
+      19,
+      27,
+      11
+     ],
+     "subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    },
+    {
+     "parent_idx": 9,
+     "subsample_ids": [
+      0,
+      7,
+      10
+     ],
+     "subsample_scores": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      0.0,
+      1.0,
+      1.0
+     ]
+    }
+   ]
+  },
+  {
+   "i": 5,
+   "iteration_id": "69486835",
+   "n_tasks": 5,
+   "accepted_candidate_idxs": [
+    12
+   ],
+   "tasks": [
+    {
+     "parent_idx": 9,
+     "subsample_ids": [
+      9,
+      23,
+      15
+     ],
+     "subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    },
+    {
+     "parent_idx": 10,
+     "subsample_ids": [
+      4,
+      20,
+      21
+     ],
+     "subsample_scores": [
+      1.0,
+      0.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "parent_idx": 9,
+     "subsample_ids": [
+      17,
+      2,
+      5
+     ],
+     "subsample_scores": [
+      1.0,
+      1.0,
+      0.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    },
+    {
+     "parent_idx": 8,
+     "subsample_ids": [
+      24,
+      13,
+      26
+     ],
+     "subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      0.0,
+      1.0,
+      1.0
+     ]
+    },
+    {
+     "parent_idx": 7,
+     "subsample_ids": [
+      6,
+      3,
+      29
+     ],
+     "subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    }
+   ]
+  },
+  {
+   "i": 6,
+   "iteration_id": "105fcb33",
+   "n_tasks": 5,
+   "accepted_candidate_idxs": [
+    13
+   ],
+   "tasks": [
+    {
+     "parent_idx": 8,
+     "subsample_ids": [
+      5,
+      20,
+      17
+     ],
+     "subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    },
+    {
+     "parent_idx": 9,
+     "subsample_ids": [
+      15,
+      7,
+      27
+     ],
+     "subsample_scores": [
+      1.0,
+      0.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "parent_idx": 7,
+     "subsample_ids": [
+      23,
+      8,
+      9
+     ],
+     "subsample_scores": [
+      1.0,
+      0.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    },
+    {
+     "parent_idx": 10,
+     "subsample_ids": [
+      22,
+      18,
+      25
+     ],
+     "subsample_scores": [
+      1.0,
+      0.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "parent_idx": 10,
+     "subsample_ids": [
+      28,
+      16,
+      4
+     ],
+     "subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    }
+   ]
+  },
+  {
+   "i": 7,
+   "iteration_id": "7f92c5eb",
+   "n_tasks": 5,
+   "accepted_candidate_idxs": [
+    14,
+    15
+   ],
+   "tasks": [
+    {
+     "parent_idx": 4,
+     "subsample_ids": [
+      8,
+      19,
+      17
+     ],
+     "subsample_scores": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "new_subsample_scores": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "parent_idx": 8,
+     "subsample_ids": [
+      5,
+      20,
+      1
+     ],
+     "subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "parent_idx": 13,
+     "subsample_ids": [
+      11,
+      14,
+      12
+     ],
+     "subsample_scores": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "parent_idx": 10,
+     "subsample_ids": [
+      7,
+      22,
+      18
+     ],
+     "subsample_scores": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "parent_idx": 9,
+     "subsample_ids": [
+      15,
+      27,
+      6
+     ],
+     "subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    }
+   ]
+  },
+  {
+   "i": 8,
+   "iteration_id": "9a6bb652",
+   "n_tasks": 5,
+   "accepted_candidate_idxs": [],
+   "tasks": [
+    {
+     "parent_idx": 9,
+     "subsample_ids": [
+      17,
+      7,
+      8
+     ],
+     "subsample_scores": [
+      1.0,
+      0.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "parent_idx": 9,
+     "subsample_ids": [
+      15,
+      13,
+      2
+     ],
+     "subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    },
+    {
+     "parent_idx": 13,
+     "subsample_ids": [
+      26,
+      24,
+      5
+     ],
+     "subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      0.0,
+      1.0,
+      1.0
+     ]
+    },
+    {
+     "parent_idx": 8,
+     "subsample_ids": [
+      21,
+      19,
+      25
+     ],
+     "subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    },
+    {
+     "parent_idx": 8,
+     "subsample_ids": [
+      23,
+      9,
+      10
+     ],
+     "subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      1.0,
+      0.0
+     ]
+    }
+   ]
+  },
+  {
+   "i": 9,
+   "iteration_id": "03767ae1",
+   "n_tasks": 5,
+   "accepted_candidate_idxs": [
+    16
+   ],
+   "tasks": [
+    {
+     "parent_idx": 13,
+     "subsample_ids": [
+      17,
+      11,
+      7
+     ],
+     "subsample_scores": [
+      1.0,
+      1.0,
+      0.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "parent_idx": 8,
+     "subsample_ids": [
+      0,
+      28,
+      29
+     ],
+     "subsample_scores": [
+      0.0,
+      1.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "parent_idx": 13,
+     "subsample_ids": [
+      27,
+      14,
+      1
+     ],
+     "subsample_scores": [
+      1.0,
+      0.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "parent_idx": 13,
+     "subsample_ids": [
+      12,
+      16,
+      20
+     ],
+     "subsample_scores": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "new_subsample_scores": [
+      0.0,
+      1.0,
+      1.0
+     ]
+    },
+    {
+     "parent_idx": 12,
+     "subsample_ids": [
+      3,
+      8,
+      5
+     ],
+     "subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    }
+   ]
+  },
+  {
+   "i": 10,
+   "iteration_id": "1affcb4c",
+   "n_tasks": 5,
+   "accepted_candidate_idxs": [
+    17,
+    18
+   ],
+   "tasks": [
+    {
+     "parent_idx": 4,
+     "subsample_ids": [
+      17,
+      15,
+      4
+     ],
+     "subsample_scores": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    },
+    {
+     "parent_idx": 16,
+     "subsample_ids": [
+      20,
+      26,
+      22
+     ],
+     "subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    },
+    {
+     "parent_idx": 13,
+     "subsample_ids": [
+      18,
+      7,
+      2
+     ],
+     "subsample_scores": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "parent_idx": 13,
+     "subsample_ids": [
+      24,
+      13,
+      11
+     ],
+     "subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    },
+    {
+     "parent_idx": 9,
+     "subsample_ids": [
+      6,
+      19,
+      27
+     ],
+     "subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    }
+   ]
+  },
+  {
+   "i": 11,
+   "iteration_id": "44035922",
+   "n_tasks": 5,
+   "accepted_candidate_idxs": [
+    19,
+    20
+   ],
+   "tasks": [
+    {
+     "parent_idx": 13,
+     "subsample_ids": [
+      17,
+      18,
+      7
+     ],
+     "subsample_scores": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "parent_idx": 4,
+     "subsample_ids": [
+      15,
+      4,
+      20
+     ],
+     "subsample_scores": [
+      0.0,
+      1.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    },
+    {
+     "parent_idx": 16,
+     "subsample_ids": [
+      23,
+      9,
+      0
+     ],
+     "subsample_scores": [
+      1.0,
+      1.0,
+      0.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "parent_idx": 13,
+     "subsample_ids": [
+      21,
+      8,
+      10
+     ],
+     "subsample_scores": [
+      1.0,
+      1.0,
+      0.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "parent_idx": 17,
+     "subsample_ids": [
+      22,
+      25,
+      29
+     ],
+     "subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    }
+   ]
+  },
+  {
+   "i": 12,
+   "iteration_id": "1ecbd26b",
+   "n_tasks": 5,
+   "accepted_candidate_idxs": [],
+   "tasks": [
+    {
+     "parent_idx": 17,
+     "subsample_ids": [
+      18,
+      7,
+      28
+     ],
+     "subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      0.0,
+      1.0,
+      1.0
+     ]
+    },
+    {
+     "parent_idx": 13,
+     "subsample_ids": [
+      15,
+      17,
+      20
+     ],
+     "subsample_scores": [
+      1.0,
+      1.0,
+      0.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "parent_idx": 16,
+     "subsample_ids": [
+      3,
+      1,
+      16
+     ],
+     "subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "parent_idx": 9,
+     "subsample_ids": [
+      14,
+      12,
+      6
+     ],
+     "subsample_scores": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "parent_idx": 17,
+     "subsample_ids": [
+      13,
+      2,
+      5
+     ],
+     "subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    }
+   ]
+  }
+ ],
+ "cache_stats": {
+  "files": 964,
+  "train_cells": 331,
+  "val_cells": 633,
+  "distinct_candidate_hashes": 65
+ },
+ "log_proposals": [
+  {
+   "iteration": 1,
+   "component": "current_candidate",
+   "text": "Solve the math problem carefully but concisely. Break down the steps and provide the final answer at the end. The final answer must be placed within \\boxed{}. For rational answers, use the LaTeX fraction form (e.g., \\boxed{\\frac{1}{576}}). For integer answers, just use \\boxed{200}. Ensure the final boxed answer is the last thing in your response. Be concise to fit within token limits."
+  },
+  {
+   "iteration": 1,
+   "component": "current_candidate",
+   "text": "Solve the math problem step by step, but keep your reasoning concise and avoid excessively long derivations that may exceed output limits. Present the final answer in the expected format: use proper LaTeX notation for mathematical expressions (e.g., \\sqrt{} for square roots, \\boxed{} for boxed answers). If the answer is a plain number, just output the number. Always end with the final answer clearly shown."
+  },
+  {
+   "iteration": 1,
+   "component": "current_candidate",
+   "text": "Solve the math problem step by step, keeping your reasoning concise. Conclude with the final integer answer inside \\boxed{}."
+  },
+  {
+   "iteration": 1,
+   "component": "current_candidate",
+   "text": "Solve the math problem as concisely as possible. Keep your reasoning very short\u2014no more than a few lines. Then, output a JSON object with an \"answer\" field containing the final answer in valid LaTeX. If there are multiple values, separate them with commas. Use standard LaTeX commands (e.g., \\sqrt{10}). Do not output any text beyond the JSON."
+  },
+  {
+   "iteration": 1,
+   "component": "current_candidate",
+   "text": "Solve the math problem carefully. Break down the steps and provide the final answer. Output the final answer using proper LaTeX formatting, enclosed in \\boxed{} (e.g., \\boxed{42} or \\boxed{\\frac{a}{b}})."
+  },
+  {
+   "iteration": 2,
+   "component": "current_candidate",
+   "text": "Solve the math problem step-by-step. Then, output the final answer on a new line as a plain LaTeX string. Use proper LaTeX math mode: \\sqrt{} for square roots, \\frac{}{} for fractions, etc. Do NOT wrap the answer in JSON, quotation marks, or any extra text. The final answer must exactly match the expression that would appear inside a \\boxed{} command."
+  },
+  {
+   "iteration": 2,
+   "component": "current_candidate",
+   "text": "Solve the math problem. Output only the final answer as a valid LaTeX expression. Do not include any reasoning, steps, or additional text. Use standard LaTeX commands (e.g., \\sqrt{10}, \\frac{a}{b}). If there are multiple values, separate them with commas."
+  },
+  {
+   "iteration": 2,
+   "component": "current_candidate",
+   "text": "Provide a clear, concise solution. Show only essential reasoning steps\u2014avoid overly long derivations. End with the final answer formatted as \\boxed{...}. Use LaTeX for fractions or expressions when appropriate. Keep the reasoning brief to avoid exceeding limits."
+  },
+  {
+   "iteration": 2,
+   "component": "current_candidate",
+   "text": "Solve the math problem concisely. Use brief reasoning (a few lines at most) to arrive at the answer, then output only the final answer in valid LaTeX. Do not include any additional text, JSON, or formatting\u2014just the LaTeX expression."
+  },
+  {
+   "iteration": 2,
+   "component": "current_candidate",
+   "text": "Solve the math problem. Your response must contain only the final answer in valid LaTeX. Do not include any reasoning, explanation, or JSON formatting. Use standard LaTeX commands (e.g., \\sqrt{10}). If there are multiple values, separate them with commas."
+  },
+  {
+   "iteration": 3,
+   "component": "current_candidate",
+   "text": "Solve the math problem concisely. Use brief reasoning, then output only the final answer as a raw LaTeX string. Do not enclose the answer in $...$ or \\(...\\). For example, output \\sqrt{6} instead of \\(\\sqrt{6}\\) and 20 instead of $20$. Do not include any other text."
+  },
+  {
+   "iteration": 3,
+   "component": "current_candidate",
+   "text": "Solve the math problem step-by-step. Then, on a new line, output only the final answer as a plain LaTeX string. Do not wrap the answer in \\boxed{}, quotation marks, or any other characters. Use proper LaTeX math mode: \\sqrt{} for square roots, \\frac{}{} for fractions, etc. For example, if the answer is 8\\sqrt{10}, output exactly: 8\\sqrt{10}. If the answer is an integer like 103, output exactly: 103."
+  },
+  {
+   "iteration": 3,
+   "component": "current_candidate",
+   "text": "Solve the math problem concisely. Keep your reasoning extremely brief (at most 3 sentences). Then output only the final answer. The answer must be a plain number or a simple LaTeX expression (e.g., 29, \\frac{4}{9}) with no extra formatting like \\boxed{} or \\(...\\). Do not include any other text."
+  },
+  {
+   "iteration": 3,
+   "component": "current_candidate",
+   "text": "{\"answer\": \"Solve the problem concisely. Provide the final answer as a LaTeX expression within a JSON object: {\\\"answer\\\": \\\"...\\\"}. Do not include any reasoning in the output. Keep your internal reasoning extremely short to avoid truncation.\"}"
+  },
+  {
+   "iteration": 3,
+   "component": "current_candidate",
+   "text": "Solve the math problem step-by-step concisely. Avoid long, unnecessary reasoning or tangential explanations. After reasoning, output the final answer on a new line as a plain LaTeX string. Use proper LaTeX math mode: \\sqrt{} for square roots, \\frac{}{} for fractions, etc. Do NOT wrap the answer in \\boxed{}, JSON, quotation marks, or any extra text. The answer should be exactly the expression that would appear inside a \\boxed{} command."
+  },
+  {
+   "iteration": 4,
+   "component": "current_candidate",
+   "text": "Solve the math problem. Output only the final answer, which must be a plain number or a simple LaTeX expression (e.g., 29, \\frac{4}{9}). Do not include any reasoning or extra formatting."
+  },
+  {
+   "iteration": 4,
+   "component": "current_candidate",
+   "text": "Solve the math problem concisely. Keep your reasoning brief (at most 3 sentences). Then, on a new line, output only the final answer. The answer must be a plain number or a simple LaTeX expression (e.g., 29, \\frac{4}{9}). Do not include extra formatting like \\boxed{} or \\(...\\)."
+  },
+  {
+   "iteration": 4,
+   "component": "current_candidate",
+   "text": "Solve the math problem concisely. You must produce a short reasoning (at most 5 sentences, total under 150 words). Then output the final answer inside \\boxed{} as a valid LaTeX expression. For numeric answers, just put the number inside \\boxed{}, e.g., \\boxed{20}. For fractions, use \\boxed{\\frac{4}{9}}. Do not include any other text, JSON, or formatting. Ensure the answer is the very last thing you output."
+  },
+  {
+   "iteration": 4,
+   "component": "current_candidate",
+   "text": "Solve the following math problem. Keep your reasoning extremely short \u2014 no more than 100 words total. Then output the final answer exactly as a raw LaTeX string (e.g., 200, \\frac{1}{576}, \\sqrt{3}), without any \\boxed{}, \\text{}, or other formatting. The entire response must end with that LaTeX expression, and nothing else after it. Do not output JSON or any extra text."
+  },
+  {
+   "iteration": 4,
+   "component": "current_candidate",
+   "text": "Output only the final answer as a raw LaTeX string. Do not include any reasoning or other text. Do not enclose the answer in $...$ or \\(...\\). For example, if the answer is \\sqrt{6}, output \\sqrt{6}; if the answer is 20, output 20."
+  },
+  {
+   "iteration": 5,
+   "component": "current_candidate",
+   "text": "Output only the final answer. The answer must be a plain number or a simple LaTeX expression (e.g., 29, \\frac{4}{9}) with no extra formatting like \\boxed{} or \\(...\\). Do not include any reasoning, steps, or other text."
+  },
+  {
+   "iteration": 5,
+   "component": "current_candidate",
+   "text": "Solve the math problem concisely. Use brief reasoning (a few lines at most) to arrive at the answer. Then, output the final answer as a raw LaTeX string without any surrounding math-mode delimiters such as \\(, \\), $$, or $$. Do not include any additional text or formatting\u2014just the LaTeX expression."
+  },
+  {
+   "iteration": 5,
+   "component": "current_candidate",
+   "text": "Output only the final answer. Do not include any reasoning or extra text. The answer must be a plain number or a simple LaTeX expression (e.g., 29, \\frac{4}{9}) with no extra formatting like \\boxed{} or \\(...\\)."
+  },
+  {
+   "iteration": 5,
+   "component": "current_candidate",
+   "text": "Output only the final answer as a raw LaTeX string. Do not include any reasoning, steps, or additional text. For example, output \\sqrt{6} instead of \\(\\sqrt{6}\\) and 20 instead of $20$."
+  },
+  {
+   "iteration": 5,
+   "component": "current_candidate",
+   "text": "Solve the following math problem. Keep your reasoning extremely short \u2014 at most 30 words. You MUST end your response with the final answer exactly as a raw LaTeX string (e.g., 200, \\frac{1}{576}, \\sqrt{3}), with no \\boxed{}, \\text{}, or any other formatting. The answer must be the last thing in your response; no trailing spaces, newlines, or text after it. If you exceed the word limit, your answer will be discarded."
+  },
+  {
+   "iteration": 6,
+   "component": "current_candidate",
+   "text": "Solve the following math problem. Do not include any reasoning, commentary, or extra text. Output only the final answer as a raw LaTeX string (e.g., 200, \\frac{1}{576}, \\sqrt{3}), without any \\boxed{}, \\text{}, or other formatting. The entire response must consist solely of that LaTeX expression, with nothing else before or after."
+  },
+  {
+   "iteration": 6,
+   "component": "current_candidate",
+   "text": "Solve the math problem concisely. Output only the final answer as a raw LaTeX string without any surrounding math-mode delimiters. Do not include any reasoning, commentary, or additional text. If you cannot determine the exact answer, provide your best guess in LaTeX."
+  },
+  {
+   "iteration": 6,
+   "component": "current_candidate",
+   "text": "Solve the following math problem. Keep your reasoning extremely short \u2014 no more than 100 words total. Then output the final answer exactly as a raw LaTeX string (e.g., 200, \\frac{1}{576}, \\sqrt{3}), without any \\boxed{}, \\text{}, or other formatting. Simplify the expression fully, including rationalizing denominators. The entire response must end with that LaTeX expression, and nothing else after it. Do not output JSON or any extra text."
+  },
+  {
+   "iteration": 6,
+   "component": "current_candidate",
+   "text": "Solve the math problem concisely. Output only the final answer. The answer must be a plain number or a simple LaTeX expression (e.g., 29, \\frac{4}{9}) with no extra formatting like \\boxed{} or \\(...\\). Do not include any reasoning or other text."
+  },
+  {
+   "iteration": 6,
+   "component": "current_candidate",
+   "text": "Solve the math problem step-by-step. Then, on a new line, output only the final answer as a plain LaTeX string. Do not wrap the answer in \\boxed{}, quotation marks, dollar signs, or any other characters or delimiters. The final line must contain exactly the LaTeX expression, with no extra spaces, punctuation, or text. Use LaTeX commands for mathematical expressions: \\sqrt{} for square roots, \\frac{}{} for fractions, etc. For example, if the answer is 8\\sqrt{10}, output exactly: 8\\sqrt{10}. If the answer is an integer like 103, output exactly: 103. If the answer is a fraction like 3/4, output exactly: \\frac{3}{4}."
+  },
+  {
+   "iteration": 7,
+   "component": "current_candidate",
+   "text": "Solve the math problem concisely. Keep your reasoning extremely brief (at most 3 sentences). Then output only the final answer. The answer must be a plain number or a simple LaTeX expression (e.g., 29, \\frac{4}{9}) with no extra formatting like \\boxed{} or \\(...\\). Do not include any other text."
+  },
+  {
+   "iteration": 7,
+   "component": "current_candidate",
+   "text": "Solve the math problem. Output only the final answer as a raw LaTeX string (e.g., 200, \\frac{1}{576}, \\sqrt{3}). Do not include any reasoning or extra text."
+  },
+  {
+   "iteration": 7,
+   "component": "current_candidate",
+   "text": "Think step-by-step to solve the problem. Show all your reasoning and double-check your work. Then, on a new line, output only the final answer as a plain LaTeX string. Do not wrap the answer in \\boxed{}, quotation marks, or any other characters. Use proper LaTeX math mode: \\sqrt{} for square roots, \\frac{}{} for fractions, etc. For example, if the answer is 8\\sqrt{10}, output exactly: 8\\sqrt{10}. If the answer is an integer like 103, output exactly: 103."
+  },
+  {
+   "iteration": 7,
+   "component": "current_candidate",
+   "text": "Solve the math problem concisely. Keep any reasoning extremely brief\u2014at most two short sentences. Then output the final answer as a raw LaTeX string without any surrounding math-mode delimiters (e.g., no \\(, \\), $$, or $$). The output must contain only that LaTeX expression, nothing else. Never return an empty or null response; always include at least the answer."
+  },
+  {
+   "iteration": 7,
+   "component": "current_candidate",
+   "text": "Solve the math problem concisely. First, provide brief step-by-step reasoning (a few lines). Then, on a new line, output the final answer as a raw LaTeX string without any surrounding math-mode delimiters such as \\(, \\), $$, or \\boxed{}. The answer should be exactly the LaTeX expression (e.g., -984, 3375, 8\\sqrt{10})."
+  },
+  {
+   "iteration": 8,
+   "component": "current_candidate",
+   "text": "Solve the math problem concisely. Output only a JSON object with exactly one key: \"answer\". The value must be the final answer as a valid LaTeX mathematical expression (e.g., \"29\" for integers, \"\\\\frac{1}{576}\" for fractions). Do not enclose the answer in \\boxed{} or $\u2026$. Do not include any reasoning, commentary, or additional text\u2014just the JSON object. Ensure the JSON is well\u2011formed and parseable."
+  },
+  {
+   "iteration": 8,
+   "component": "current_candidate",
+   "text": "Output only the final answer as a plain number or simple LaTeX expression (e.g., 29, \\frac{4}{9}). Do not include any other text, explanation, or formatting like \\boxed{} or \\(...\\)."
+  },
+  {
+   "iteration": 8,
+   "component": "current_candidate",
+   "text": "Think step-by-step to solve the problem, but keep your reasoning extremely concise \u2014 aim for at most 100 words total. After reasoning, output only the final answer on a new line as a plain LaTeX string. Do not wrap the answer in \\boxed{}, quotation marks, or any other characters. Use proper LaTeX math mode: \\sqrt{} for square roots, \\frac{}{} for fractions, etc. For example, if the answer is 8\\sqrt{10}, output exactly: 8\\sqrt{10}. If the answer is an integer like 103, output exactly: 103. Always end with the answer; never leave the response empty."
+  },
+  {
+   "iteration": 8,
+   "component": "current_candidate",
+   "text": "Provide at most two lines of reasoning. Then, output only the final answer as a raw LaTeX string, with no extra text. Do not use \\(...\\) or $$...$$."
+  },
+  {
+   "iteration": 8,
+   "component": "current_candidate",
+   "text": "Solve the following math problem. Output only the final answer exactly as a raw LaTeX string (e.g., 200, \\frac{1}{576}, \\sqrt{3}), without any \\boxed{}, \\text{}, or other formatting. Do not include any reasoning or extra text."
+  },
+  {
+   "iteration": 9,
+   "component": "current_candidate",
+   "text": "Solve the following math problem. Output only the final answer as a raw LaTeX string (e.g., 200, \\frac{1}{576}, \\sqrt{3}), without any \\boxed{}, \\text{}, or other formatting. Do not include any reasoning, explanation, or additional text. The entire response must be exactly that LaTeX expression."
+  },
+  {
+   "iteration": 9,
+   "component": "current_candidate",
+   "text": "Solve the following math problem. Output only the final answer exactly as a raw LaTeX string (e.g., 200, \\frac{1}{576}, \\sqrt{3}), with no other text, reasoning, boxed commands, or formatting. The entire response must consist solely of that LaTeX expression."
+  },
+  {
+   "iteration": 9,
+   "component": "current_candidate",
+   "text": "Solve the problem step by step. Show all your reasoning and calculations, and double-check your work. Then, on a new line, output only the final answer as a plain LaTeX string. Do not wrap the answer in \\boxed{}, quotation marks, or any other characters. Use proper LaTeX math mode (e.g., \\sqrt{}, \\frac{}{}). For example, if the answer is 8\\sqrt{10}, output exactly: 8\\sqrt{10}. If it is 103, output exactly: 103. Ensure the final line contains nothing else besides the answer."
+  },
+  {
+   "iteration": 9,
+   "component": "current_candidate",
+   "text": "Solve the math problem. Output only the final answer. The answer must be a plain number or a simple LaTeX expression (e.g., 29, \\frac{4}{9}) with no extra formatting like \\boxed{} or \\(...\\). Do not include any reasoning or other text."
+  },
+  {
+   "iteration": 9,
+   "component": "current_candidate",
+   "text": "Solve the math problem concisely. Output only the final answer, with no reasoning or extra text. The answer must be a plain number or a simple LaTeX expression (e.g., 29, \\frac{4}{9}). For multiple values, separate by commas. Do not use \\boxed{} or formatting delimiters like \\(...\\)."
+  },
+  {
+   "iteration": 10,
+   "component": "current_candidate",
+   "text": "Think step-by-step to solve the problem, but keep your reasoning short and to the point. Avoid lengthy calculations. Summarize key steps. At the end, on a new line, output only the final answer as a plain LaTeX string. Do not wrap the answer in \\boxed{}, quotation marks, or any other characters. Use proper LaTeX math mode: \\sqrt{} for square roots, \\frac{}{} for fractions, etc. For example, if the answer is 8\\sqrt{10}, output exactly: 8\\sqrt{10}. If the answer is an integer like 103, output exactly: 103. Ensure you always produce the final answer as the last part of your response."
+  },
+  {
+   "iteration": 10,
+   "component": "current_candidate",
+   "text": "Output exactly the answer, and nothing else. The answer must be a plain number or a simple LaTeX expression (e.g., 29, \\frac{4}{9}), with no formatting like \\boxed{} or \\(...\\). Do not include any reasoning or other text."
+  },
+  {
+   "iteration": 10,
+   "component": "current_candidate",
+   "text": "Reason concisely to solve the problem. Keep your entire reasoning under 150 words; use short steps and abbreviations if needed. After reasoning, output exactly a valid JSON object with a single key \"answer\" containing the final answer as a LaTeX string. For example: {\"answer\": \"103\"} or {\"answer\": \"8\\\\sqrt{10}\"}. Do not include any other text before or after the JSON. If you cannot finish reasoning, provide your best guess answer anyway."
+  },
+  {
+   "iteration": 10,
+   "component": "current_candidate",
+   "text": "Reason step-by-step concisely (limit reasoning to a few sentences). After reasoning, on a new line, output only the final answer as a plain LaTeX string. Do not wrap the answer in \\boxed{}, quotation marks, or any other characters. Use proper LaTeX math mode: \\sqrt{} for square roots, \\frac{}{} for fractions, etc. For example, if the answer is 8\\sqrt{10}, output exactly: 8\\sqrt{10}. If the answer is an integer like 103, output exactly: 103. Important: The final answer must appear in the text output and must not be left empty. Never allow your reasoning to crowd out the final answer."
+  },
+  {
+   "iteration": 10,
+   "component": "current_candidate",
+   "text": "Solve the following math problem. Output only the final answer exactly as a raw LaTeX string (e.g., 200, \\frac{1}{576}, \\sqrt{3}), without any \\boxed{}, \\text{}, or other formatting. Simplify the expression fully, including rationalizing denominators. Do not output any other text."
+  },
+  {
+   "iteration": 11,
+   "component": "current_candidate",
+   "text": "Solve the math problem concisely. Use brief reasoning (a few lines at most) to arrive at the answer, then output only the final answer as a raw LaTeX expression. Do not wrap the answer in any math mode delimiters such as \\(, \\), $$, or $$. Do not include any additional text, JSON, or formatting\u2014just the raw LaTeX expression."
+  },
+  {
+   "iteration": 11,
+   "component": "current_candidate",
+   "text": "Output only the final answer as a plain LaTeX string. Do not include any reasoning, explanations, or additional text. Use proper LaTeX math mode: \\sqrt{} for square roots, \\frac{}{} for fractions, etc. For example, if the answer is 8\\sqrt{10}, output exactly: 8\\sqrt{10}. If the answer is an integer like 103, output exactly: 103."
+  },
+  {
+   "iteration": 11,
+   "component": "current_candidate",
+   "text": "Think step-by-step to solve the problem. Provide a concise solution that includes only the essential steps and avoids lengthy digressions. Ensure your reasoning is brief enough to stay within limits. After your reasoning, on a new line, output the final answer as a plain LaTeX string. Do not wrap the answer in \\boxed{}, quotation marks, or any other characters. Use proper LaTeX math mode: \\sqrt{} for square roots, \\frac{}{} for fractions, etc. For example, if the answer is 8\\sqrt{10}, output exactly: 8\\sqrt{10}. If the answer is an integer like 103, output exactly: 103."
+  },
+  {
+   "iteration": 11,
+   "component": "current_candidate",
+   "text": "Think step-by-step to solve the problem. Express your reasoning concisely, focusing on the essential steps. After solving, confirm your answer is correct, then output it on a new line as a plain LaTeX string (no \\boxed{}). Use \\sqrt{} for square roots, \\frac{}{} for fractions, etc. For example: 8\\sqrt{10} or 103."
+  },
+  {
+   "iteration": 11,
+   "component": "current_candidate",
+   "text": "Solve the following math problem. Output only the final answer as a raw LaTeX string (e.g., 200, \\frac{1}{576}, \\sqrt{3}), without any \\boxed{}, \\text{}, or other formatting. Do not include any reasoning, explanations, or additional text. The entire response must be exactly that LaTeX expression."
+  },
+  {
+   "iteration": 12,
+   "component": "current_candidate",
+   "text": "Think step-by-step to solve the problem. Be concise: keep your reasoning short and to the point. After reasoning, on a new line, output only the final answer as a plain LaTeX string. Do not wrap the answer in \\boxed{}, quotation marks, or any other characters. Use proper LaTeX math mode: \\sqrt{} for square roots, \\frac{}{} for fractions, etc. For example, if the answer is 8\\sqrt{10}, output exactly: 8\\sqrt{10}. If the answer is an integer like 103, output exactly: 103."
+  },
+  {
+   "iteration": 12,
+   "component": "current_candidate",
+   "text": "Solve the math problem concisely. Use brief reasoning (a few lines at most) to arrive at the answer, then output only the final answer. The final answer must be a valid LaTeX math expression strictly without any surrounding delimiters such as \\(, \\), $$, or $. Do not include any additional text, JSON, or formatting\u2014just the bare LaTeX expression (e.g., \\sqrt{6}, 8\\sqrt{10}, \\frac{2025}{101}). Never enclose the answer in math mode delimiters."
+  },
+  {
+   "iteration": 12,
+   "component": "current_candidate",
+   "text": "Think step-by-step but extremely concisely: at most 2\u20133 short sentences. Do not ramble or exceed token limits. Then, on a new line, output the final answer as a plain LaTeX string. Do not wrap it in \\boxed{}, quotation marks, or any other characters. Use proper LaTeX math mode: \\sqrt{} for square roots, \\frac{}{} for fractions, etc. For example, if the answer is 8\\sqrt{10}, output exactly: 8\\sqrt{10}. If the answer is an integer like 103, output exactly: 103. IMPORTANT: Always provide a final answer, even if unsure. Never leave the answer empty. Ensure the answer is the last non-empty line."
+  },
+  {
+   "iteration": 12,
+   "component": "current_candidate",
+   "text": "Think step-by-step to solve the problem, but keep your reasoning brief. Double-check your work quickly. Then, on a new line, output only the final answer as a plain LaTeX string. Do not wrap the answer in \\boxed{}, quotation marks, or any other characters. Use proper LaTeX math mode: \\sqrt{} for square roots, \\frac{}{} for fractions, etc. For example, if the answer is 8\\sqrt{10}, output exactly: 8\\sqrt{10}. If the answer is an integer like 103, output exactly: 103. It is essential that you always include the final answer; avoid excessively long reasoning that may prevent you from finishing."
+  },
+  {
+   "iteration": 12,
+   "component": "current_candidate",
+   "text": "Solve the problem without outputting any reasoning or intermediate steps. Reply with only the final answer, formatted as a raw LaTeX expression. The expression must represent the mathematical result exactly (e.g., 42, \\frac{1}{2}, \\sqrt{3}). Do not wrap the expression in math mode delimiters such as $, $$, \\(, or \\[. Do not include any other text."
+  },
+  {
+   "iteration": 13,
+   "component": "current_candidate",
+   "text": "Output only the final answer as a raw LaTeX expression. Do not include any reasoning, explanation, or additional text. Do not wrap the answer in math mode delimiters such as \\(, \\), $$, or $$. Just the raw LaTeX for the answer."
+  },
+  {
+   "iteration": 13,
+   "component": "current_candidate",
+   "text": "Think step-by-step to solve the problem, but keep your reasoning concise and avoid excessively long derivations. If the reasoning starts to become too lengthy, summarize your approach and make sure to produce a final answer. On a new line, output only the final answer as a plain LaTeX string. Do not wrap the answer in \\boxed{}, quotation marks, or any other characters. Use proper LaTeX math mode: \\sqrt{} for square roots, \\frac{}{} for fractions, etc. For example, if the answer is 8\\sqrt{10}, output exactly: 8\\sqrt{10}. If the answer is an integer like 103, output exactly: 103."
+  },
+  {
+   "iteration": 13,
+   "component": "current_candidate",
+   "text": "Identify the key insight and reason step-by-step concisely (limit to 2\u20133 sentences). Then, on a new line, output only the final answer as a plain LaTeX string. Do not use \\boxed{}, quotation marks, or any additional characters. For example, if the answer is 8\\sqrt{10}, output exactly: 8\\sqrt{10}. The answer line must consist solely of the LaTeX expression."
+  },
+  {
+   "iteration": 13,
+   "component": "current_candidate",
+   "text": "Solve the following math problem. Output only the final answer as a raw LaTeX string, with no additional text whatsoever. For example, if the answer is 200, output 200; if it's \\frac{1}{576}, output \\frac{1}{576}. Do not include reasoning, explanation, or any formatting like \\boxed{}."
+  },
+  {
+   "iteration": 13,
+   "component": "current_candidate",
+   "text": "Solve the problem internally with careful step-by-step reasoning. Output only the final answer as a raw LaTeX expression. Do not include any other text, characters, or formatting\u2014no reasoning, no punctuation, no math mode delimiters ($$, \\(, \\), \\[, \\]), no \\boxed{}."
+  }
+ ]
+}

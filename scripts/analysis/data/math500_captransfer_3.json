@@ -1,0 +1,2389 @@
+{
+ "name": "math500_captransfer_3",
+ "run_dir": "examples/aime_math/test/math500_formal/gepa_captransfer_3/t_0.2/run_seed_42",
+ "dataset": "math500",
+ "seed": 42,
+ "n_train": 40,
+ "n_val": 45,
+ "n_iterations": 9,
+ "n_candidates": 15,
+ "total_metric_calls": 903,
+ "candidates": [
+  {
+   "idx": 0,
+   "val_avg": 0.6222222222222222,
+   "parents": [
+    null
+   ],
+   "iteration_id": "seed",
+   "metric_calls_at_discovery": 0,
+   "train_scores": {
+    "0": 1.0,
+    "1": 0.0,
+    "4": 1.0,
+    "5": 1.0,
+    "6": 1.0,
+    "7": 1.0,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0,
+    "13": 1.0,
+    "14": 1.0,
+    "16": 1.0,
+    "17": 1.0,
+    "18": 1.0,
+    "19": 1.0,
+    "20": 1.0,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 0.0,
+    "24": 0.0,
+    "27": 0.0,
+    "29": 1.0,
+    "30": 0.0,
+    "32": 1.0,
+    "33": 1.0,
+    "34": 1.0,
+    "37": 1.0,
+    "38": 0.0
+   },
+   "val_scores": {
+    "0": 0.0,
+    "1": 0.0,
+    "2": 1.0,
+    "3": 0.0,
+    "4": 1.0,
+    "5": 0.0,
+    "6": 1.0,
+    "7": 1.0,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0,
+    "13": 0.0,
+    "14": 1.0,
+    "15": 1.0,
+    "16": 1.0,
+    "17": 1.0,
+    "18": 0.0,
+    "19": 1.0,
+    "20": 0.0,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 0.0,
+    "24": 0.0,
+    "25": 1.0,
+    "26": 0.0,
+    "27": 1.0,
+    "28": 1.0,
+    "29": 1.0,
+    "30": 0.0,
+    "31": 1.0,
+    "32": 1.0,
+    "33": 0.0,
+    "34": 1.0,
+    "35": 1.0,
+    "36": 0.0,
+    "37": 1.0,
+    "38": 0.0,
+    "39": 1.0,
+    "40": 1.0,
+    "41": 0.0,
+    "42": 1.0,
+    "43": 0.0,
+    "44": 0.0
+   },
+   "text": "Solve the math problem carefully. Break down the steps and provide the final answer as a single number."
+  },
+  {
+   "idx": 1,
+   "val_avg": 0.8,
+   "parents": [
+    0
+   ],
+   "iteration_id": "93effe77",
+   "metric_calls_at_discovery": 75,
+   "train_scores": {
+    "2": 1.0,
+    "3": 0.0,
+    "4": 1.0,
+    "5": 1.0,
+    "6": 1.0,
+    "8": 1.0,
+    "9": 1.0,
+    "15": 1.0,
+    "16": 1.0,
+    "27": 1.0,
+    "29": 1.0,
+    "30": 1.0,
+    "31": 0.0,
+    "35": 1.0,
+    "36": 1.0,
+    "37": 1.0
+   },
+   "val_scores": {
+    "0": 0.0,
+    "1": 1.0,
+    "2": 1.0,
+    "3": 1.0,
+    "4": 1.0,
+    "5": 1.0,
+    "6": 1.0,
+    "7": 1.0,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 0.0,
+    "13": 1.0,
+    "14": 1.0,
+    "15": 1.0,
+    "16": 1.0,
+    "17": 1.0,
+    "18": 1.0,
+    "19": 1.0,
+    "20": 1.0,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 1.0,
+    "24": 0.0,
+    "25": 0.0,
+    "26": 0.0,
+    "27": 1.0,
+    "28": 1.0,
+    "29": 0.0,
+    "30": 1.0,
+    "31": 1.0,
+    "32": 1.0,
+    "33": 1.0,
+    "34": 1.0,
+    "35": 0.0,
+    "36": 1.0,
+    "37": 1.0,
+    "38": 0.0,
+    "39": 0.0,
+    "40": 1.0,
+    "41": 1.0,
+    "42": 1.0,
+    "43": 1.0,
+    "44": 1.0
+   },
+   "text": "Solve the math problem step by step. Then, output the final answer on its own line as a single mathematical expression. Use proper LaTeX formatting: write fractions with \\frac{}{}, and include a space between numbers and symbols like \\pi (e.g., use \"2 \\pi\" instead of \"2\\pi\")."
+  },
+  {
+   "idx": 2,
+   "val_avg": 0.7333333333333333,
+   "parents": [
+    0
+   ],
+   "iteration_id": "02db3aba",
+   "metric_calls_at_discovery": 147,
+   "train_scores": {
+    "7": 1.0,
+    "24": 0.0,
+    "27": 1.0
+   },
+   "val_scores": {
+    "0": 0.0,
+    "1": 1.0,
+    "2": 1.0,
+    "3": 1.0,
+    "4": 0.0,
+    "5": 1.0,
+    "6": 1.0,
+    "7": 1.0,
+    "8": 0.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0,
+    "13": 1.0,
+    "14": 0.0,
+    "15": 1.0,
+    "16": 1.0,
+    "17": 1.0,
+    "18": 1.0,
+    "19": 1.0,
+    "20": 1.0,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 1.0,
+    "24": 0.0,
+    "25": 0.0,
+    "26": 0.0,
+    "27": 1.0,
+    "28": 1.0,
+    "29": 1.0,
+    "30": 1.0,
+    "31": 0.0,
+    "32": 1.0,
+    "33": 0.0,
+    "34": 1.0,
+    "35": 1.0,
+    "36": 1.0,
+    "37": 1.0,
+    "38": 0.0,
+    "39": 0.0,
+    "40": 1.0,
+    "41": 1.0,
+    "42": 1.0,
+    "43": 0.0,
+    "44": 1.0
+   },
+   "text": "Solve the math problem carefully. Break down the steps and provide the final answer in the exact format required, including any necessary units, symbols, or LaTeX formatting (e.g., ^\\circ, \\pi). Do not strip formatting or convert expressions to plain numbers unless explicitly requested."
+  },
+  {
+   "idx": 3,
+   "val_avg": 0.8888888888888888,
+   "parents": [
+    0
+   ],
+   "iteration_id": "03bb47d7",
+   "metric_calls_at_discovery": 219,
+   "train_scores": {
+    "2": 1.0,
+    "3": 0.0,
+    "15": 1.0,
+    "21": 1.0,
+    "23": 1.0,
+    "26": 1.0,
+    "28": 0.0,
+    "29": 1.0,
+    "31": 0.0,
+    "32": 1.0,
+    "33": 1.0,
+    "35": 1.0,
+    "36": 1.0,
+    "38": 1.0,
+    "39": 1.0
+   },
+   "val_scores": {
+    "0": 0.0,
+    "1": 1.0,
+    "2": 1.0,
+    "3": 0.0,
+    "4": 1.0,
+    "5": 1.0,
+    "6": 1.0,
+    "7": 1.0,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0,
+    "13": 0.0,
+    "14": 1.0,
+    "15": 1.0,
+    "16": 1.0,
+    "17": 1.0,
+    "18": 1.0,
+    "19": 1.0,
+    "20": 1.0,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 1.0,
+    "24": 0.0,
+    "25": 1.0,
+    "26": 1.0,
+    "27": 1.0,
+    "28": 1.0,
+    "29": 1.0,
+    "30": 1.0,
+    "31": 1.0,
+    "32": 1.0,
+    "33": 1.0,
+    "34": 1.0,
+    "35": 1.0,
+    "36": 1.0,
+    "37": 1.0,
+    "38": 1.0,
+    "39": 0.0,
+    "40": 1.0,
+    "41": 1.0,
+    "42": 1.0,
+    "43": 1.0,
+    "44": 1.0
+   },
+   "text": "Solve the math problem carefully. Break down the steps. Provide the final answer in the exact format expected by the problem instructions and reference solutions:\n- For multiple choice questions, output \\text{(X)} where X is the correct letter (e.g., \\text{(C)}).\n- For integer answers, output only the integer (e.g., 5).\n- For fractional or expression answers, output the standard LaTeX expression without any delimiters like \\( or $$ (e.g., \\frac{\\sqrt{21}}{5}).\nDo not add extra text, spaces, or formatting around the final answer."
+  },
+  {
+   "idx": 4,
+   "val_avg": 0.8666666666666667,
+   "parents": [
+    0
+   ],
+   "iteration_id": "c8d207ea",
+   "metric_calls_at_discovery": 291,
+   "train_scores": {
+    "13": 1.0,
+    "22": 1.0,
+    "30": 1.0
+   },
+   "val_scores": {
+    "0": 0.0,
+    "1": 1.0,
+    "2": 1.0,
+    "3": 0.0,
+    "4": 1.0,
+    "5": 1.0,
+    "6": 1.0,
+    "7": 1.0,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0,
+    "13": 1.0,
+    "14": 1.0,
+    "15": 1.0,
+    "16": 1.0,
+    "17": 1.0,
+    "18": 0.0,
+    "19": 1.0,
+    "20": 1.0,
+    "21": 0.0,
+    "22": 1.0,
+    "23": 1.0,
+    "24": 0.0,
+    "25": 1.0,
+    "26": 1.0,
+    "27": 1.0,
+    "28": 1.0,
+    "29": 1.0,
+    "30": 1.0,
+    "31": 1.0,
+    "32": 1.0,
+    "33": 1.0,
+    "34": 1.0,
+    "35": 1.0,
+    "36": 1.0,
+    "37": 1.0,
+    "38": 1.0,
+    "39": 0.0,
+    "40": 1.0,
+    "41": 1.0,
+    "42": 1.0,
+    "43": 1.0,
+    "44": 1.0
+   },
+   "text": "Solve the math problem carefully. Break down the steps and provide the final answer. For integer answers, output the number; for fractions, use LaTeX \\frac{a}{b} format. Output only the answer."
+  },
+  {
+   "idx": 5,
+   "val_avg": 0.7111111111111111,
+   "parents": [
+    3
+   ],
+   "iteration_id": "c8d207ea-1",
+   "metric_calls_at_discovery": 333,
+   "train_scores": {
+    "3": 0.0,
+    "15": 1.0,
+    "21": 1.0,
+    "27": 1.0,
+    "30": 0.0,
+    "31": 1.0
+   },
+   "val_scores": {
+    "0": 1.0,
+    "1": 1.0,
+    "2": 1.0,
+    "3": 0.0,
+    "4": 1.0,
+    "5": 0.0,
+    "6": 0.0,
+    "7": 1.0,
+    "8": 0.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0,
+    "13": 0.0,
+    "14": 1.0,
+    "15": 1.0,
+    "16": 1.0,
+    "17": 1.0,
+    "18": 1.0,
+    "19": 1.0,
+    "20": 0.0,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 1.0,
+    "24": 0.0,
+    "25": 1.0,
+    "26": 0.0,
+    "27": 1.0,
+    "28": 1.0,
+    "29": 1.0,
+    "30": 1.0,
+    "31": 1.0,
+    "32": 1.0,
+    "33": 0.0,
+    "34": 1.0,
+    "35": 1.0,
+    "36": 1.0,
+    "37": 1.0,
+    "38": 1.0,
+    "39": 0.0,
+    "40": 1.0,
+    "41": 0.0,
+    "42": 1.0,
+    "43": 0.0,
+    "44": 0.0
+   },
+   "text": "Solve the math problem carefully. Break down the steps. Provide the final answer in the exact format expected by the problem instructions and reference solutions:\n- For multiple choice questions, output \\text{(X)} where X is the correct letter (e.g., \\text{(C)}).\n- For integer answers, output only the integer (e.g., 5).\n- For fractional or expression answers, output the standard LaTeX expression without any delimiters like \\( or $$. If the problem asks for a \"common fraction\" (or a simplified fraction), use \\dfrac (e.g., \\dfrac{17}{50}). Otherwise, use \\frac (e.g., \\frac{\\sqrt{21}}{5}, -\\frac{24}{25}).\nDo not add extra text, spaces, or formatting around the final answer."
+  },
+  {
+   "idx": 6,
+   "val_avg": 0.9111111111111111,
+   "parents": [
+    3
+   ],
+   "iteration_id": "22589d63",
+   "metric_calls_at_discovery": 405,
+   "train_scores": {
+    "2": 1.0,
+    "3": 1.0,
+    "5": 1.0,
+    "7": 1.0,
+    "8": 0.0,
+    "9": 1.0,
+    "14": 0.0,
+    "15": 1.0,
+    "17": 1.0,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 1.0,
+    "24": 1.0,
+    "25": 1.0,
+    "29": 1.0,
+    "30": 1.0,
+    "32": 1.0,
+    "33": 1.0,
+    "35": 1.0,
+    "36": 1.0,
+    "38": 1.0
+   },
+   "val_scores": {
+    "0": 0.0,
+    "1": 1.0,
+    "2": 1.0,
+    "3": 1.0,
+    "4": 1.0,
+    "5": 1.0,
+    "6": 1.0,
+    "7": 1.0,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0,
+    "13": 1.0,
+    "14": 1.0,
+    "15": 1.0,
+    "16": 1.0,
+    "17": 1.0,
+    "18": 1.0,
+    "19": 1.0,
+    "20": 1.0,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 1.0,
+    "24": 0.0,
+    "25": 1.0,
+    "26": 0.0,
+    "27": 1.0,
+    "28": 1.0,
+    "29": 1.0,
+    "30": 1.0,
+    "31": 1.0,
+    "32": 1.0,
+    "33": 1.0,
+    "34": 1.0,
+    "35": 1.0,
+    "36": 1.0,
+    "37": 1.0,
+    "38": 1.0,
+    "39": 0.0,
+    "40": 1.0,
+    "41": 1.0,
+    "42": 1.0,
+    "43": 1.0,
+    "44": 1.0
+   },
+   "text": "Solve the math problem carefully. Break down the steps. Provide the final answer in the exact format expected by the problem instructions and reference solutions:\n- For multiple choice questions, output \\text{(X)} where X is the correct letter (e.g., \\text{(C)}).\n- For integer answers, output only the integer (e.g., 5).\n- For fractional or expression answers, output the standard LaTeX expression without any delimiters like \\( or $$ (e.g., \\frac{\\sqrt{21}}{5}).\n- For answers that include units (such as degrees), output the value with the unit in LaTeX (e.g., 30^\\circ).\nDo not add extra text, spaces, or formatting around the final answer."
+  },
+  {
+   "idx": 7,
+   "val_avg": 0.8222222222222222,
+   "parents": [
+    0
+   ],
+   "iteration_id": "22589d63-1",
+   "metric_calls_at_discovery": 447,
+   "train_scores": {
+    "27": 1.0,
+    "32": 1.0,
+    "33": 1.0
+   },
+   "val_scores": {
+    "0": 0.0,
+    "1": 1.0,
+    "2": 0.0,
+    "3": 1.0,
+    "4": 1.0,
+    "5": 1.0,
+    "6": 1.0,
+    "7": 1.0,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0,
+    "13": 0.0,
+    "14": 1.0,
+    "15": 1.0,
+    "16": 1.0,
+    "17": 1.0,
+    "18": 1.0,
+    "19": 1.0,
+    "20": 1.0,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 1.0,
+    "24": 0.0,
+    "25": 0.0,
+    "26": 0.0,
+    "27": 1.0,
+    "28": 1.0,
+    "29": 1.0,
+    "30": 1.0,
+    "31": 1.0,
+    "32": 1.0,
+    "33": 1.0,
+    "34": 1.0,
+    "35": 1.0,
+    "36": 1.0,
+    "37": 1.0,
+    "38": 1.0,
+    "39": 0.0,
+    "40": 1.0,
+    "41": 1.0,
+    "42": 1.0,
+    "43": 0.0,
+    "44": 1.0
+   },
+   "text": "Solve the math problem carefully. Break down the steps and provide the final answer as a single mathematical expression. Pay close attention to exact formatting: use proper LaTeX with spaces where standard (e.g., '288 \\pi', not '288\u03c0'), and ensure the final output matches the reference format exactly."
+  },
+  {
+   "idx": 8,
+   "val_avg": 0.7555555555555555,
+   "parents": [
+    3
+   ],
+   "iteration_id": "a917247f",
+   "metric_calls_at_discovery": 519,
+   "train_scores": {
+    "0": 1.0,
+    "1": 0.0,
+    "3": 0.0,
+    "11": 1.0,
+    "12": 0.0,
+    "14": 1.0,
+    "16": 1.0,
+    "20": 1.0,
+    "26": 1.0,
+    "27": 1.0,
+    "28": 1.0,
+    "30": 0.0,
+    "31": 1.0,
+    "32": 1.0,
+    "33": 1.0,
+    "34": 1.0,
+    "37": 1.0
+   },
+   "val_scores": {
+    "0": 1.0,
+    "1": 1.0,
+    "2": 1.0,
+    "3": 0.0,
+    "4": 1.0,
+    "5": 1.0,
+    "6": 1.0,
+    "7": 1.0,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0,
+    "13": 0.0,
+    "14": 1.0,
+    "15": 1.0,
+    "16": 1.0,
+    "17": 1.0,
+    "18": 1.0,
+    "19": 1.0,
+    "20": 0.0,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 1.0,
+    "24": 0.0,
+    "25": 1.0,
+    "26": 0.0,
+    "27": 1.0,
+    "28": 1.0,
+    "29": 1.0,
+    "30": 1.0,
+    "31": 1.0,
+    "32": 1.0,
+    "33": 1.0,
+    "34": 1.0,
+    "35": 1.0,
+    "36": 0.0,
+    "37": 1.0,
+    "38": 0.0,
+    "39": 0.0,
+    "40": 1.0,
+    "41": 0.0,
+    "42": 1.0,
+    "43": 0.0,
+    "44": 0.0
+   },
+   "text": "Solve the math problem carefully. Break down the steps. Provide the final answer in the exact format expected by the problem instructions and reference solutions:\n- For multiple choice questions, output \\text{(X)} where X is the correct letter (e.g., \\text{(C)}).\n- For integer answers, output only the integer (e.g., 5).\n- For fractional or expression answers, output the standard LaTeX expression without any delimiters like \\( or $$. Use \\dfrac for fractions (e.g., \\dfrac{\\sqrt{21}}{5}).\nDo not add extra text, spaces, or formatting around the final answer."
+  },
+  {
+   "idx": 9,
+   "val_avg": 0.8444444444444444,
+   "parents": [
+    5
+   ],
+   "iteration_id": "a917247f-1",
+   "metric_calls_at_discovery": 561,
+   "train_scores": {
+    "3": 1.0,
+    "27": 1.0,
+    "30": 1.0
+   },
+   "val_scores": {
+    "0": 0.0,
+    "1": 1.0,
+    "2": 1.0,
+    "3": 1.0,
+    "4": 1.0,
+    "5": 1.0,
+    "6": 1.0,
+    "7": 1.0,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0,
+    "13": 0.0,
+    "14": 1.0,
+    "15": 0.0,
+    "16": 1.0,
+    "17": 1.0,
+    "18": 1.0,
+    "19": 0.0,
+    "20": 1.0,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 1.0,
+    "24": 0.0,
+    "25": 1.0,
+    "26": 1.0,
+    "27": 1.0,
+    "28": 1.0,
+    "29": 0.0,
+    "30": 1.0,
+    "31": 1.0,
+    "32": 1.0,
+    "33": 1.0,
+    "34": 1.0,
+    "35": 1.0,
+    "36": 1.0,
+    "37": 1.0,
+    "38": 1.0,
+    "39": 0.0,
+    "40": 1.0,
+    "41": 1.0,
+    "42": 1.0,
+    "43": 1.0,
+    "44": 1.0
+   },
+   "text": "Solve the math problem carefully. Break down the steps. Provide the final answer in the exact format expected by the problem instructions and reference solutions.\n\nFormatting rules:\n- For multiple choice questions, output \\text{(X)} where X is the correct letter (e.g., \\text{(C)}).\n- For integer answers that are pure numbers (no units), output only the integer (e.g., 5). If the answer is an integer that requires a unit (e.g., degrees), include the unit in LaTeX (e.g., 30^\\circ).\n- For fractional or expression answers, output the standard LaTeX expression without any delimiters like \\( or $$. Use \\frac by default; only use \\dfrac if the problem explicitly asks for a \"common fraction\" or \"simplified fraction\".\n- Always include necessary units (e.g., ^\\circ for degrees) as part of the LaTeX expression.\nDo not add extra text, spaces, or formatting around the final answer."
+  },
+  {
+   "idx": 10,
+   "val_avg": 0.9111111111111111,
+   "parents": [
+    3
+   ],
+   "iteration_id": "a917247f-2",
+   "metric_calls_at_discovery": 603,
+   "train_scores": {
+    "1": 0.0,
+    "3": 0.0,
+    "4": 1.0,
+    "6": 1.0,
+    "10": 1.0,
+    "12": 1.0,
+    "13": 1.0,
+    "18": 1.0,
+    "19": 1.0,
+    "25": 1.0,
+    "26": 1.0,
+    "27": 1.0,
+    "28": 1.0,
+    "31": 0.0,
+    "38": 1.0,
+    "39": 1.0
+   },
+   "val_scores": {
+    "0": 0.0,
+    "1": 1.0,
+    "2": 1.0,
+    "3": 1.0,
+    "4": 1.0,
+    "5": 0.0,
+    "6": 1.0,
+    "7": 1.0,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0,
+    "13": 0.0,
+    "14": 1.0,
+    "15": 1.0,
+    "16": 1.0,
+    "17": 1.0,
+    "18": 1.0,
+    "19": 1.0,
+    "20": 1.0,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 1.0,
+    "24": 0.0,
+    "25": 1.0,
+    "26": 1.0,
+    "27": 1.0,
+    "28": 1.0,
+    "29": 1.0,
+    "30": 1.0,
+    "31": 1.0,
+    "32": 1.0,
+    "33": 1.0,
+    "34": 1.0,
+    "35": 1.0,
+    "36": 1.0,
+    "37": 1.0,
+    "38": 1.0,
+    "39": 1.0,
+    "40": 1.0,
+    "41": 1.0,
+    "42": 1.0,
+    "43": 1.0,
+    "44": 1.0
+   },
+   "text": "Solve the math problem carefully. Break down the steps in your reasoning. Provide the final answer in the exact format expected by the problem instructions and reference solutions:\n- For multiple choice questions, output \\text{(X)} where X is the correct letter (e.g., \\text{(C)}).\n- For integer answers, output only the integer (e.g., 5).\n- For fractional or expression answers, output the standard LaTeX expression without any delimiters like \\( or $$ (e.g., \\frac{\\sqrt{21}}{5}).\nOutput ONLY the final answer and nothing else. Do not add any extra text, spaces, punctuation, or formatting around the answer. Do not include any tags, markers, or completion tokens like \"[[ ## completed ## ]]\". Your entire response must be exactly the answer string."
+  },
+  {
+   "idx": 11,
+   "val_avg": 0.7777777777777778,
+   "parents": [
+    8
+   ],
+   "iteration_id": "3a649b04",
+   "metric_calls_at_discovery": 705,
+   "train_scores": {
+    "28": 1.0,
+    "30": 1.0,
+    "31": 1.0
+   },
+   "val_scores": {
+    "0": 0.0,
+    "1": 1.0,
+    "2": 0.0,
+    "3": 1.0,
+    "4": 1.0,
+    "5": 1.0,
+    "6": 1.0,
+    "7": 1.0,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0,
+    "13": 0.0,
+    "14": 1.0,
+    "15": 1.0,
+    "16": 1.0,
+    "17": 1.0,
+    "18": 0.0,
+    "19": 1.0,
+    "20": 1.0,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 1.0,
+    "24": 0.0,
+    "25": 1.0,
+    "26": 0.0,
+    "27": 1.0,
+    "28": 1.0,
+    "29": 1.0,
+    "30": 1.0,
+    "31": 1.0,
+    "32": 1.0,
+    "33": 1.0,
+    "34": 1.0,
+    "35": 0.0,
+    "36": 1.0,
+    "37": 1.0,
+    "38": 0.0,
+    "39": 0.0,
+    "40": 1.0,
+    "41": 0.0,
+    "42": 1.0,
+    "43": 1.0,
+    "44": 1.0
+   },
+   "text": "Solve the math problem carefully. Break down the steps. Provide the final answer in the exact format expected by the problem instructions and reference solutions:\n- For multiple choice questions, output \\text{(X)} where X is the correct letter (e.g., \\text{(C)}).\n- For integer answers, output only the integer (e.g., 5).\n- For fractional answers: if the problem explicitly asks for the answer as a \"common fraction\" or \"fraction\", use \\dfrac (e.g., \\dfrac{1}{2}); otherwise, use \\frac (e.g., \\frac{1}{2}).\n- For other expressions, output the standard LaTeX expression without any delimiters like \\( or $$.\nDo not add extra text, spaces, or formatting around the final answer."
+  },
+  {
+   "idx": 12,
+   "val_avg": 0.7333333333333333,
+   "parents": [
+    8
+   ],
+   "iteration_id": "3a649b04-1",
+   "metric_calls_at_discovery": 747,
+   "train_scores": {
+    "3": 1.0,
+    "11": 1.0,
+    "16": 1.0
+   },
+   "val_scores": {
+    "0": 1.0,
+    "1": 1.0,
+    "2": 1.0,
+    "3": 1.0,
+    "4": 1.0,
+    "5": 1.0,
+    "6": 1.0,
+    "7": 1.0,
+    "8": 1.0,
+    "9": 0.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0,
+    "13": 0.0,
+    "14": 1.0,
+    "15": 1.0,
+    "16": 1.0,
+    "17": 1.0,
+    "18": 1.0,
+    "19": 1.0,
+    "20": 0.0,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 1.0,
+    "24": 0.0,
+    "25": 1.0,
+    "26": 0.0,
+    "27": 1.0,
+    "28": 1.0,
+    "29": 1.0,
+    "30": 0.0,
+    "31": 1.0,
+    "32": 1.0,
+    "33": 0.0,
+    "34": 1.0,
+    "35": 1.0,
+    "36": 0.0,
+    "37": 1.0,
+    "38": 1.0,
+    "39": 0.0,
+    "40": 1.0,
+    "41": 0.0,
+    "42": 1.0,
+    "43": 0.0,
+    "44": 0.0
+   },
+   "text": "Solve the math problem carefully. Break down the steps in your reasoning. Provide the final answer in the exact format expected by the problem instructions and reference solutions:\n\n- For multiple choice questions, output \\text{(X)} where X is the correct letter (e.g., \\text{(C)}).\n- For integer answers, output only the integer (e.g., 5).\n- For fractional or expression answers, output the standard LaTeX expression without any delimiters like \\( or $$. Use \\dfrac for fractions (e.g., \\dfrac{\\sqrt{21}}{5}).\n- For angles in degrees, output the number followed by ^\\circ (e.g., 30^\\circ). Include any other units (e.g., \\%, \\text{ units}) in a similar LaTeX format.\n\nOutput only the final answer, with no extra text, spaces, punctuation, or formatting such as brackets, quotes, or completion tokens (like \"## completed ##\")."
+  },
+  {
+   "idx": 13,
+   "val_avg": 0.8444444444444444,
+   "parents": [
+    8
+   ],
+   "iteration_id": "3a649b04-2",
+   "metric_calls_at_discovery": 789,
+   "train_scores": {
+    "1": 1.0,
+    "12": 1.0,
+    "20": 1.0
+   },
+   "val_scores": {
+    "0": 0.0,
+    "1": 1.0,
+    "2": 1.0,
+    "3": 1.0,
+    "4": 1.0,
+    "5": 1.0,
+    "6": 1.0,
+    "7": 1.0,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 0.0,
+    "12": 1.0,
+    "13": 1.0,
+    "14": 1.0,
+    "15": 1.0,
+    "16": 1.0,
+    "17": 1.0,
+    "18": 0.0,
+    "19": 1.0,
+    "20": 1.0,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 1.0,
+    "24": 0.0,
+    "25": 1.0,
+    "26": 0.0,
+    "27": 1.0,
+    "28": 1.0,
+    "29": 1.0,
+    "30": 1.0,
+    "31": 1.0,
+    "32": 1.0,
+    "33": 1.0,
+    "34": 1.0,
+    "35": 1.0,
+    "36": 1.0,
+    "37": 1.0,
+    "38": 0.0,
+    "39": 0.0,
+    "40": 1.0,
+    "41": 1.0,
+    "42": 1.0,
+    "43": 1.0,
+    "44": 1.0
+   },
+   "text": "Solve the math problem carefully. Break down the steps. Provide the final answer in the exact format expected by the problem instructions and reference solutions:\n- For multiple choice questions, output \\text{(X)} where X is the correct letter (e.g., \\text{(C)}).\n- For integer answers, output only the integer (e.g., 5).\n- For other answers (fractions, expressions, intervals, etc.), output the answer as a LaTeX expression exactly as it would appear in the reference solution, using \\frac (not \\dfrac) for fractions, and including any necessary variables or prefixes (e.g., x \\in [-2,7]). Do not include \\boxed{} or any surrounding delimiters like \\(...\\) or $$...$$.\nDo not add extra text, spaces, or formatting around the final answer."
+  },
+  {
+   "idx": 14,
+   "val_avg": 0.8444444444444444,
+   "parents": [
+    6
+   ],
+   "iteration_id": "74e45bc7",
+   "metric_calls_at_discovery": 861,
+   "train_scores": {
+    "2": 1.0,
+    "14": 1.0,
+    "32": 1.0
+   },
+   "val_scores": {
+    "0": 0.0,
+    "1": 0.0,
+    "2": 1.0,
+    "3": 1.0,
+    "4": 1.0,
+    "5": 1.0,
+    "6": 1.0,
+    "7": 1.0,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0,
+    "13": 0.0,
+    "14": 1.0,
+    "15": 1.0,
+    "16": 1.0,
+    "17": 1.0,
+    "18": 1.0,
+    "19": 1.0,
+    "20": 1.0,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 1.0,
+    "24": 0.0,
+    "25": 0.0,
+    "26": 0.0,
+    "27": 1.0,
+    "28": 1.0,
+    "29": 1.0,
+    "30": 1.0,
+    "31": 1.0,
+    "32": 1.0,
+    "33": 1.0,
+    "34": 1.0,
+    "35": 1.0,
+    "36": 1.0,
+    "37": 1.0,
+    "38": 1.0,
+    "39": 0.0,
+    "40": 1.0,
+    "41": 1.0,
+    "42": 1.0,
+    "43": 1.0,
+    "44": 1.0
+   },
+   "text": "Solve the math problem carefully. Break down the steps. Provide the final answer in the exact format expected by the problem instructions and reference solutions:\n- For multiple choice questions, output \\text{(X)} where X is the correct letter (e.g., \\text{(C)}).\n- For integer answers, output only the integer (e.g., 5).\n- For fractional or expression answers, output the standard LaTeX expression without any delimiters like \\( or $$ (e.g., \\frac{\\sqrt{21}}{5}).\n- For answers that include units (such as degrees), output the value with the unit in LaTeX (e.g., 30^\\circ).\nDo not add extra text, spaces, or formatting around the final answer. Your entire response must be exactly the answer and nothing else\u2014no additional words, punctuation, spaces, line breaks, or markers (for example, do not include things like '[[ ## completed ## ]]')."
+  }
+ ],
+ "rejected_proposal_train_scores": {
+  "c80cc7dc63d9e073": {
+   "3": 0.0,
+   "27": 1.0,
+   "34": 1.0
+  },
+  "3aba260dd3b206ee": {
+   "9": 0.0,
+   "14": 0.0,
+   "20": 0.0
+  },
+  "275c8e806254069f": {
+   "0": 0.0,
+   "5": 0.0,
+   "37": 0.0
+  },
+  "f04d508828674845": {
+   "4": 1.0,
+   "25": 1.0,
+   "26": 1.0
+  },
+  "be8c615400127be4": {
+   "7": 1.0,
+   "17": 0.0,
+   "29": 1.0
+  },
+  "fe6bd3b08dbf6fd1": {
+   "10": 1.0,
+   "13": 1.0,
+   "19": 1.0
+  },
+  "ed8eda228d859947": {
+   "2": 1.0,
+   "35": 1.0,
+   "36": 1.0
+  },
+  "e0adcf1d5aa98450": {
+   "1": 0.0,
+   "12": 0.0,
+   "19": 1.0
+  },
+  "e17b79caf1aa46bb": {
+   "1": 1.0,
+   "12": 1.0,
+   "28": 0.0
+  },
+  "69cea86460bf0b5f": {
+   "6": 1.0,
+   "18": 1.0,
+   "39": 1.0
+  },
+  "207db8c8b9da08b0": {
+   "10": 0.0,
+   "17": 0.0,
+   "18": 1.0
+  },
+  "2ceda6b3677a1ac4": {
+   "3": 0.0,
+   "8": 1.0,
+   "29": 1.0
+  },
+  "d1cb7c36ef45a53b": {
+   "27": 1.0,
+   "31": 1.0,
+   "38": 1.0
+  },
+  "cbed2b4aff151eb9": {
+   "25": 1.0,
+   "28": 0.0,
+   "39": 1.0
+  },
+  "c463ea53032b2233": {
+   "5": 1.0,
+   "9": 1.0,
+   "27": 1.0
+  },
+  "6aecdc5c04c11d1b": {
+   "11": 1.0,
+   "16": 1.0,
+   "20": 1.0
+  },
+  "957ec9082bf92ede": {
+   "7": 1.0,
+   "17": 1.0,
+   "20": 1.0
+  },
+  "f69e89d367783de4": {
+   "0": 1.0,
+   "31": 1.0,
+   "37": 1.0
+  },
+  "d1a2fd3e41d0d06e": {
+   "11": 1.0,
+   "16": 1.0,
+   "34": 1.0
+  },
+  "eff2b2844b88c925": {
+   "8": 0.0,
+   "22": 1.0,
+   "24": 1.0
+  },
+  "3e0860604f666420": {
+   "2": 1.0,
+   "35": 1.0,
+   "36": 0.0
+  },
+  "c34e93837bb1c2a4": {
+   "4": 1.0,
+   "16": 1.0,
+   "37": 1.0
+  },
+  "bc6a5eabc960b749": {
+   "0": 1.0,
+   "8": 0.0,
+   "18": 0.0
+  },
+  "b2e9ac2504a83d54": {
+   "5": 1.0,
+   "15": 1.0,
+   "21": 1.0
+  },
+  "bf71958f8907f5e8": {
+   "15": 1.0,
+   "30": 0.0,
+   "31": 1.0
+  },
+  "53d655e61b475fa8": {
+   "13": 0.0,
+   "21": 0.0,
+   "22": 0.0
+  },
+  "a13714e7b8cc6d1a": {
+   "26": 1.0,
+   "30": 1.0,
+   "31": 0.0
+  },
+  "874f639b4a586cc1": {
+   "3": 1.0,
+   "9": 1.0,
+   "30": 1.0
+  },
+  "81979963ea9a7923": {
+   "1": 0.0,
+   "12": 1.0,
+   "19": 1.0
+  },
+  "2fec648c0c6fa76f": {
+   "33": 1.0,
+   "35": 1.0,
+   "36": 0.0
+  },
+  "e6a940a7f77616bd": {
+   "6": 1.0,
+   "14": 1.0,
+   "34": 1.0
+  },
+  "030e2bb9577f8352": {
+   "10": 1.0,
+   "11": 1.0,
+   "24": 0.0
+  },
+  "ace868ec510220d2": {
+   "23": 1.0,
+   "25": 1.0,
+   "38": 1.0
+  },
+  "7513c13722a79d90": {
+   "3": 1.0,
+   "12": 1.0,
+   "28": 1.0
+  },
+  "85245a9642298ed7": {
+   "23": 0.0,
+   "27": 0.0,
+   "38": 0.0
+  },
+  "a05318919aafa7a3": {
+   "1": 0.0,
+   "14": 1.0,
+   "30": 1.0
+  }
+ },
+ "iterations": [
+  {
+   "i": 0,
+   "iteration_id": "93effe77",
+   "n_tasks": 5,
+   "accepted_candidate_idxs": [
+    1
+   ],
+   "tasks": [
+    {
+     "parent_idx": 0,
+     "subsample_ids": [
+      19,
+      1,
+      12
+     ],
+     "subsample_scores": [
+      1.0,
+      0.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "parent_idx": 0,
+     "subsample_ids": [
+      27,
+      4,
+      6
+     ],
+     "subsample_scores": [
+      0.0,
+      1.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    },
+    {
+     "parent_idx": 0,
+     "subsample_ids": [
+      20,
+      9,
+      14
+     ],
+     "subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "parent_idx": 0,
+     "subsample_ids": [
+      11,
+      16,
+      34
+     ],
+     "subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    },
+    {
+     "parent_idx": 0,
+     "subsample_ids": [
+      37,
+      5,
+      0
+     ],
+     "subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    }
+   ]
+  },
+  {
+   "i": 1,
+   "iteration_id": "02db3aba",
+   "n_tasks": 5,
+   "accepted_candidate_idxs": [
+    2
+   ],
+   "tasks": [
+    {
+     "parent_idx": 0,
+     "subsample_ids": [
+      27,
+      24,
+      7
+     ],
+     "subsample_scores": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "parent_idx": 0,
+     "subsample_ids": [
+      12,
+      1,
+      19
+     ],
+     "subsample_scores": [
+      1.0,
+      0.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "parent_idx": 0,
+     "subsample_ids": [
+      10,
+      17,
+      18
+     ],
+     "subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "parent_idx": 1,
+     "subsample_ids": [
+      4,
+      16,
+      37
+     ],
+     "subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    },
+    {
+     "parent_idx": 0,
+     "subsample_ids": [
+      34,
+      6,
+      14
+     ],
+     "subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    }
+   ]
+  },
+  {
+   "i": 2,
+   "iteration_id": "03bb47d7",
+   "n_tasks": 5,
+   "accepted_candidate_idxs": [
+    3
+   ],
+   "tasks": [
+    {
+     "parent_idx": 1,
+     "subsample_ids": [
+      27,
+      5,
+      9
+     ],
+     "subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    },
+    {
+     "parent_idx": 0,
+     "subsample_ids": [
+      20,
+      7,
+      17
+     ],
+     "subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    },
+    {
+     "parent_idx": 0,
+     "subsample_ids": [
+      24,
+      11,
+      10
+     ],
+     "subsample_scores": [
+      0.0,
+      1.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      0.0,
+      1.0,
+      1.0
+     ]
+    },
+    {
+     "parent_idx": 0,
+     "subsample_ids": [
+      18,
+      0,
+      8
+     ],
+     "subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "parent_idx": 0,
+     "subsample_ids": [
+      38,
+      29,
+      23
+     ],
+     "subsample_scores": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    }
+   ]
+  },
+  {
+   "i": 3,
+   "iteration_id": "c8d207ea",
+   "n_tasks": 5,
+   "accepted_candidate_idxs": [
+    4,
+    5
+   ],
+   "tasks": [
+    {
+     "parent_idx": 0,
+     "subsample_ids": [
+      23,
+      38,
+      27
+     ],
+     "subsample_scores": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "new_subsample_scores": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "parent_idx": 1,
+     "subsample_ids": [
+      29,
+      8,
+      3
+     ],
+     "subsample_scores": [
+      1.0,
+      1.0,
+      0.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "parent_idx": 3,
+     "subsample_ids": [
+      36,
+      35,
+      2
+     ],
+     "subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      0.0,
+      1.0,
+      1.0
+     ]
+    },
+    {
+     "parent_idx": 0,
+     "subsample_ids": [
+      13,
+      30,
+      22
+     ],
+     "subsample_scores": [
+      1.0,
+      0.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    },
+    {
+     "parent_idx": 3,
+     "subsample_ids": [
+      15,
+      21,
+      31
+     ],
+     "subsample_scores": [
+      1.0,
+      1.0,
+      0.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    }
+   ]
+  },
+  {
+   "i": 4,
+   "iteration_id": "22589d63",
+   "n_tasks": 5,
+   "accepted_candidate_idxs": [
+    6,
+    7
+   ],
+   "tasks": [
+    {
+     "parent_idx": 1,
+     "subsample_ids": [
+      31,
+      30,
+      15
+     ],
+     "subsample_scores": [
+      0.0,
+      1.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "parent_idx": 0,
+     "subsample_ids": [
+      21,
+      13,
+      22
+     ],
+     "subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "parent_idx": 3,
+     "subsample_ids": [
+      3,
+      23,
+      38
+     ],
+     "subsample_scores": [
+      0.0,
+      1.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    },
+    {
+     "parent_idx": 1,
+     "subsample_ids": [
+      36,
+      2,
+      35
+     ],
+     "subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    },
+    {
+     "parent_idx": 0,
+     "subsample_ids": [
+      27,
+      33,
+      32
+     ],
+     "subsample_scores": [
+      0.0,
+      1.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    }
+   ]
+  },
+  {
+   "i": 5,
+   "iteration_id": "a917247f",
+   "n_tasks": 5,
+   "accepted_candidate_idxs": [
+    8,
+    9,
+    10
+   ],
+   "tasks": [
+    {
+     "parent_idx": 3,
+     "subsample_ids": [
+      31,
+      33,
+      32
+     ],
+     "subsample_scores": [
+      0.0,
+      1.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    },
+    {
+     "parent_idx": 5,
+     "subsample_ids": [
+      3,
+      30,
+      27
+     ],
+     "subsample_scores": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    },
+    {
+     "parent_idx": 3,
+     "subsample_ids": [
+      28,
+      26,
+      39
+     ],
+     "subsample_scores": [
+      0.0,
+      1.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    },
+    {
+     "parent_idx": 6,
+     "subsample_ids": [
+      25,
+      23,
+      38
+     ],
+     "subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    },
+    {
+     "parent_idx": 6,
+     "subsample_ids": [
+      8,
+      24,
+      22
+     ],
+     "subsample_scores": [
+      0.0,
+      1.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      0.0,
+      1.0,
+      1.0
+     ]
+    }
+   ]
+  },
+  {
+   "i": 6,
+   "iteration_id": "0efa55cc",
+   "n_tasks": 5,
+   "accepted_candidate_idxs": [],
+   "tasks": [
+    {
+     "parent_idx": 10,
+     "subsample_ids": [
+      28,
+      39,
+      25
+     ],
+     "subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      0.0,
+      1.0,
+      1.0
+     ]
+    },
+    {
+     "parent_idx": 8,
+     "subsample_ids": [
+      31,
+      30,
+      26
+     ],
+     "subsample_scores": [
+      1.0,
+      0.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      0.0,
+      1.0,
+      1.0
+     ]
+    },
+    {
+     "parent_idx": 8,
+     "subsample_ids": [
+      3,
+      27,
+      34
+     ],
+     "subsample_scores": [
+      0.0,
+      1.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      0.0,
+      1.0,
+      1.0
+     ]
+    },
+    {
+     "parent_idx": 6,
+     "subsample_ids": [
+      7,
+      29,
+      17
+     ],
+     "subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "parent_idx": 10,
+     "subsample_ids": [
+      13,
+      19,
+      10
+     ],
+     "subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    }
+   ]
+  },
+  {
+   "i": 7,
+   "iteration_id": "3a649b04",
+   "n_tasks": 5,
+   "accepted_candidate_idxs": [
+    11,
+    12,
+    13
+   ],
+   "tasks": [
+    {
+     "parent_idx": 8,
+     "subsample_ids": [
+      30,
+      31,
+      28
+     ],
+     "subsample_scores": [
+      0.0,
+      1.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    },
+    {
+     "parent_idx": 8,
+     "subsample_ids": [
+      3,
+      11,
+      16
+     ],
+     "subsample_scores": [
+      0.0,
+      1.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    },
+    {
+     "parent_idx": 10,
+     "subsample_ids": [
+      25,
+      26,
+      4
+     ],
+     "subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    },
+    {
+     "parent_idx": 8,
+     "subsample_ids": [
+      1,
+      12,
+      20
+     ],
+     "subsample_scores": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    },
+    {
+     "parent_idx": 10,
+     "subsample_ids": [
+      39,
+      18,
+      6
+     ],
+     "subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    }
+   ]
+  },
+  {
+   "i": 8,
+   "iteration_id": "74e45bc7",
+   "n_tasks": 5,
+   "accepted_candidate_idxs": [
+    14
+   ],
+   "tasks": [
+    {
+     "parent_idx": 6,
+     "subsample_ids": [
+      30,
+      3,
+      9
+     ],
+     "subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    },
+    {
+     "parent_idx": 10,
+     "subsample_ids": [
+      1,
+      28,
+      12
+     ],
+     "subsample_scores": [
+      0.0,
+      1.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "parent_idx": 6,
+     "subsample_ids": [
+      2,
+      32,
+      14
+     ],
+     "subsample_scores": [
+      1.0,
+      1.0,
+      0.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    },
+    {
+     "parent_idx": 8,
+     "subsample_ids": [
+      31,
+      37,
+      0
+     ],
+     "subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    },
+    {
+     "parent_idx": 6,
+     "subsample_ids": [
+      35,
+      36,
+      33
+     ],
+     "subsample_scores": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "new_subsample_scores": [
+      1.0,
+      0.0,
+      1.0
+     ]
+    }
+   ]
+  }
+ ],
+ "cache_stats": {
+  "files": 1000,
+  "train_cells": 253,
+  "val_cells": 747,
+  "distinct_candidate_hashes": 51
+ },
+ "log_proposals": [
+  {
+   "iteration": 1,
+   "component": "current_candidate",
+   "text": "Solve the math problem carefully. Break down the steps and provide the final answer in the appropriate mathematical notation."
+  },
+  {
+   "iteration": 1,
+   "component": "current_candidate",
+   "text": "Solve the math problem step by step. Then, output the final answer on its own line as a single mathematical expression. Use proper LaTeX formatting: write fractions with \\frac{}{}, and include a space between numbers and symbols like \\pi (e.g., use \"2 \\pi\" instead of \"2\\pi\")."
+  },
+  {
+   "iteration": 1,
+   "component": "current_candidate",
+   "text": "Solve the math problem carefully. Break down the steps in detail, showing all reasoning and calculations. Provide the final answer as a single number enclosed in \\boxed{}. Then, briefly state the key insight or takeaway from the problem that can be applied to similar problems."
+  },
+  {
+   "iteration": 1,
+   "component": "current_candidate",
+   "text": "Solve the math problem carefully. Provide the final answer as a single number."
+  },
+  {
+   "iteration": 1,
+   "component": "current_candidate",
+   "text": "Solve the math problem carefully. Show step-by-step reasoning. Write the final answer as a single number inside \\boxed{}."
+  },
+  {
+   "iteration": 2,
+   "component": "current_candidate",
+   "text": "Solve the math problem carefully. Break down the steps and provide the final answer in the exact format required, including any necessary units, symbols, or LaTeX formatting (e.g., ^\\circ, \\pi). Do not strip formatting or convert expressions to plain numbers unless explicitly requested."
+  },
+  {
+   "iteration": 2,
+   "component": "current_candidate",
+   "text": "Solve the math problem carefully. Break down the steps and provide the final answer in the expected format (e.g., a single number, an expression, or interval notation as appropriate)."
+  },
+  {
+   "iteration": 2,
+   "component": "current_candidate",
+   "text": "Carefully solve the given math problem step by step. Break the problem into parts, explain your reasoning at each step, and compute accurately. Once you have the final answer, double-check it for correctness. Then provide the final answer as a single number within \\boxed{}."
+  },
+  {
+   "iteration": 2,
+   "component": "current_candidate",
+   "text": "Write down your step-by-step reasoning to solve the math problem. After finding the solution, briefly reflect on what you learned and how it applies to similar problems. Then, output the final answer on its own line as a single mathematical expression. Use proper LaTeX formatting: write fractions with \\frac{}{}, and include a space between numbers and symbols like \\pi (e.g., use \"2 \\pi\" instead of \"2\\pi\")."
+  },
+  {
+   "iteration": 2,
+   "component": "current_candidate",
+   "text": "Solve the math problem carefully. First, reason step-by-step, explaining each step clearly. Then, provide the final answer as a single number."
+  },
+  {
+   "iteration": 3,
+   "component": "current_candidate",
+   "text": "Solve the math problem step by step. Provide your detailed reasoning in a clear, step-by-step manner. Then, on a separate line at the end, write 'Final Answer:' followed by the answer as a single mathematical expression. Use proper LaTeX formatting: write fractions with \\frac{}{}, and include a space between numbers and symbols like \\pi (e.g., \"2 \\pi\" instead of \"2\\pi\")."
+  },
+  {
+   "iteration": 3,
+   "component": "current_candidate",
+   "text": "Solve the math problem carefully by breaking it into steps and using general strategies: for sequences, consider averages; for powers, use digit properties and bounds; for expressions, simplify before applying constraints. Double-check your reasoning, then provide the final answer as a single number."
+  },
+  {
+   "iteration": 3,
+   "component": "current_candidate",
+   "text": "Solve the math problem carefully. Break down the steps and provide the final answer in the exact format expected by the problem (e.g., include degree symbols, units, or proper notation)."
+  },
+  {
+   "iteration": 3,
+   "component": "current_candidate",
+   "text": "Solve the math problem carefully. Break down the steps and provide the final answer inside \\boxed{}."
+  },
+  {
+   "iteration": 3,
+   "component": "current_candidate",
+   "text": "Solve the math problem carefully. Break down the steps. Provide the final answer in the exact format expected by the problem instructions and reference solutions:"
+  },
+  {
+   "iteration": 4,
+   "component": "current_candidate",
+   "text": "Carefully solve the problem step by step. Put your final answer inside \\boxed{} using proper LaTeX formatting."
+  },
+  {
+   "iteration": 4,
+   "component": "current_candidate",
+   "text": "Solve the math problem step by step. Then, output the final answer on its own line as a single mathematical expression. Use proper LaTeX formatting: write fractions with \\frac{}{}, include a space between numbers and symbols like \\pi (e.g., \"2 \\pi\"), and for angles in degrees, use ^\\circ (e.g., \"30^\\circ\"). Ensure the final answer matches the required format, including any necessary units or symbols."
+  },
+  {
+   "iteration": 4,
+   "component": "current_candidate",
+   "text": "Solve the math problem carefully. Break down the steps. Provide the final answer in the exact format expected by the problem instructions and reference solutions:"
+  },
+  {
+   "iteration": 4,
+   "component": "current_candidate",
+   "text": "Solve the math problem carefully. Break down the steps and provide the final answer. For integer answers, output the number; for fractions, use LaTeX \\frac{a}{b} format. Output only the answer."
+  },
+  {
+   "iteration": 4,
+   "component": "current_candidate",
+   "text": "Solve the math problem carefully. Break down the steps. Provide the final answer in the exact format expected by the problem instructions and reference solutions:"
+  },
+  {
+   "iteration": 5,
+   "component": "current_candidate",
+   "text": "Solve the math problem step by step. Then, output the final answer on its own line as a single mathematical expression. Use proper LaTeX formatting: write fractions with \\frac{}{} in general, but use \\dfrac{}{} when the problem asks for a \"common fraction\"; include a space between numbers and symbols like \\pi (e.g., use \"2 \\pi\" instead of \"2\\pi\")."
+  },
+  {
+   "iteration": 5,
+   "component": "current_candidate",
+   "text": "Solve the math problem systematically. First, analyze the problem and identify applicable mathematical tools (e.g., trigonometric identities, algebraic substitution, standard inequalities like AM-GM). Then, write out the full step-by-step solution, showing all work. Finally, give the final answer as a single number inside \\boxed{}."
+  },
+  {
+   "iteration": 5,
+   "component": "current_candidate",
+   "text": "Solve the math problem carefully. Break down the steps. Provide the final answer in the exact format expected by the problem instructions and reference solutions:"
+  },
+  {
+   "iteration": 5,
+   "component": "current_candidate",
+   "text": "Solve the math problem step by step. Your response must contain two parts: first, a complete step-by-step reasoning with all calculations and justifications; then, on a new line, the final answer as a single mathematical expression. Use proper LaTeX formatting: write fractions with \\frac{}{}, and include a space between numbers and symbols like \\pi (e.g., \"2 \\pi\" instead of \"2\\pi\")."
+  },
+  {
+   "iteration": 5,
+   "component": "current_candidate",
+   "text": "Solve the math problem carefully. Break down the steps and provide the final answer as a single mathematical expression. Pay close attention to exact formatting: use proper LaTeX with spaces where standard (e.g., '288 \\pi', not '288\u03c0'), and ensure the final output matches the reference format exactly."
+  },
+  {
+   "iteration": 6,
+   "component": "current_candidate",
+   "text": "Solve the math problem carefully. Break down the steps. Provide the final answer in the exact format expected by the problem instructions and reference solutions:"
+  },
+  {
+   "iteration": 6,
+   "component": "current_candidate",
+   "text": "Solve the math problem carefully. Break down the steps. Provide the final answer in the exact format expected by the problem instructions and reference solutions."
+  },
+  {
+   "iteration": 6,
+   "component": "current_candidate",
+   "text": "Solve the math problem carefully. Break down the steps in your reasoning. Provide the final answer in the exact format expected by the problem instructions and reference solutions:"
+  },
+  {
+   "iteration": 6,
+   "component": "current_candidate",
+   "text": "Solve the math problem carefully. Think step-by-step, but output only the final answer in the exact format specified below. Do not include any reasoning, extra text, spaces, or line breaks."
+  },
+  {
+   "iteration": 6,
+   "component": "current_candidate",
+   "text": "Solve the math problem carefully. Reason step-by-step, but do not include your reasoning in the output. Provide only the final answer, formatted exactly as follows:"
+  },
+  {
+   "iteration": 7,
+   "component": "current_candidate",
+   "text": "Solve the problem by reasoning step-by-step internally. Output only the final answer, formatted exactly as specified below, with no additional text, whitespace, or formatting."
+  },
+  {
+   "iteration": 7,
+   "component": "current_candidate",
+   "text": "Solve the math problem carefully. Break down the steps. Provide the final answer in the exact format expected by the problem instructions and reference solutions:"
+  },
+  {
+   "iteration": 7,
+   "component": "current_candidate",
+   "text": "Solve the math problem carefully. Provide ONLY the final answer, with absolutely no additional text, tags, spaces, or formatting. Stop immediately after the answer."
+  },
+  {
+   "iteration": 7,
+   "component": "current_candidate",
+   "text": "Think step by step to solve the math problem, but output only the final answer exactly as specified below. Do not include any reasoning, extra text, or whitespace."
+  },
+  {
+   "iteration": 7,
+   "component": "current_candidate",
+   "text": "Think step-by-step to solve the problem. Consider algebraic manipulation, complementary counting with inclusion-exclusion, and systematic base conversion where appropriate. Then, output only the final answer in the exact format required."
+  },
+  {
+   "iteration": 8,
+   "component": "current_candidate",
+   "text": "Solve the math problem carefully. Break down the steps. Provide the final answer in the exact format expected by the problem instructions and reference solutions:"
+  },
+  {
+   "iteration": 8,
+   "component": "current_candidate",
+   "text": "Solve the math problem carefully. Break down the steps in your reasoning. Provide the final answer in the exact format expected by the problem instructions and reference solutions:"
+  },
+  {
+   "iteration": 8,
+   "component": "current_candidate",
+   "text": "Solve the math problem carefully. Break down the steps in your reasoning. Provide the final answer in the exact format expected by the problem instructions and reference solutions:"
+  },
+  {
+   "iteration": 8,
+   "component": "current_candidate",
+   "text": "Solve the math problem carefully. Break down the steps. Provide the final answer in the exact format expected by the problem instructions and reference solutions:"
+  },
+  {
+   "iteration": 8,
+   "component": "current_candidate",
+   "text": "Solve the math problem and provide the final answer in the exact format expected by the problem instructions and reference solutions:"
+  },
+  {
+   "iteration": 9,
+   "component": "current_candidate",
+   "text": "Solve the math problem efficiently by breaking it down into only the essential steps. Use the most direct mathematical methods and avoid unnecessary computation. Provide the final answer in the exact format expected by the problem instructions and reference solutions:"
+  },
+  {
+   "iteration": 9,
+   "component": "current_candidate",
+   "text": "Solve the math problem carefully. Break down the steps in your reasoning. Provide the final answer in the exact format expected by the problem instructions and reference solutions:"
+  },
+  {
+   "iteration": 9,
+   "component": "current_candidate",
+   "text": "Solve the math problem carefully. Break down the steps. Provide the final answer in the exact format expected by the problem instructions and reference solutions:"
+  },
+  {
+   "iteration": 9,
+   "component": "current_candidate",
+   "text": "Solve the math problem carefully. Think step-by-step, but do not show your work. Output only the final answer in the exact format described below. Do not include any additional text, punctuation, or formatting."
+  },
+  {
+   "iteration": 9,
+   "component": "current_candidate",
+   "text": "Solve the math problem by reasoning step-by-step internally. Then, provide only the final answer in the exact format specified below. Do not include any reasoning, steps, extra text, or formatting around the final answer."
+  },
+  {
+   "iteration": 10,
+   "component": "current_candidate",
+   "text": "Solve the math problem carefully. Break down the steps. Provide the final answer exactly as it would appear in a standard reference solution, without any surrounding \\boxed{}, delimiters, or extra text. Follow these formatting guidelines:"
+  },
+  {
+   "iteration": 10,
+   "component": "current_candidate",
+   "text": "Solve the math problem carefully. Break down the steps and show your complete reasoning before giving the final answer. After your reasoning, provide the final answer on its own line, using the exact format below. Do not add any extra text, spaces, or formatting (such as \\boxed{}) around the final answer."
+  },
+  {
+   "iteration": 10,
+   "component": "current_candidate",
+   "text": "Solve the math problem carefully. Break down the steps in your reasoning. Provide the final answer in the exact format expected by the problem instructions and reference solutions:"
+  },
+  {
+   "iteration": 10,
+   "component": "current_candidate",
+   "text": "Solve the math problem carefully. Break down the steps in your reasoning. Provide the final answer in the exact format expected by the problem instructions and reference solutions:"
+  },
+  {
+   "iteration": 10,
+   "component": "current_candidate",
+   "text": "Solve the math problem by reasoning step-by-step internally. Then output only the final answer in the format specified below, with no additional text or formatting."
+  }
+ ]
+}
