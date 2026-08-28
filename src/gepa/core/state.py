@@ -1059,6 +1059,28 @@ def initialize_gepa_state(
                 f"Frontier type mismatch: requested '{frontier_type}' but loaded state has '{gepa_state.frontier_type}'. "
                 f"Use a different run_dir or match the frontier_type parameter."
             )
+        # The resumed state hard-codes the valset it was built against: the Pareto
+        # front, per-instance best candidates, and val subscores are all indexed by
+        # valset position. Resuming against a differently sized valset silently
+        # continues on the OLD one — a run configured for 45 validation examples
+        # would report "score over 2 / 45 examples" and optimize against those 2.
+        # Fail loudly instead; the fix is a fresh run_dir, not a reinterpretation.
+        # Compare against the seed candidate's per-instance val subscores: that is
+        # the one structure written exactly once, from the seed valset evaluation,
+        # and never re-keyed afterwards. (pareto_front_valset is unsuitable — it
+        # can hold ids from a later, differently sized evaluation, so a dir that
+        # has seen two sizes reports the wrong one.)
+        requested_n = len(seed_valset_evaluation.scores_by_val_id)
+        loaded_n = len(gepa_state.prog_candidate_val_subscores[0]) if gepa_state.prog_candidate_val_subscores else 0
+        if loaded_n and loaded_n != requested_n:
+            raise ValueError(
+                f"Valset size mismatch: this run has {requested_n} validation examples but the "
+                f"state saved in {run_dir!r} was built with {loaded_n}. Resuming would keep "
+                f"optimizing against the old {loaded_n}-example valset and report scores over it "
+                f"(e.g. 'full valset score ... over {loaded_n} / {requested_n} examples'). "
+                f"Point the run at a fresh run_dir (or delete gepa_state.bin there) to start over, "
+                f"or restore the original valset size to genuinely resume."
+            )
         # Sync cache with current run's cache_evaluation setting:
         # - If caching is disabled (evaluation_cache is None), clear any loaded cache
         #   to respect the current run's cache_evaluation=False setting

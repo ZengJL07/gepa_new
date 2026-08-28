@@ -32,6 +32,10 @@ full = [
     "litellm>=1.83.0,<1.92",
     "tqdm>=4.66.1",
     "cloudpickle>=3.0.0",
+    # Symbolic answer grading for LaTeX-answer math datasets (e.g. MATH-500).
+    # Pulls in sympy + latex2sympy2 + antlr4. Soft dependency: examples fall back
+    # to normalized string comparison when it is absent.
+    "math-verify>=0.8",
     # Python < 3.14
     "datasets>=2.14.6; python_version < '3.14'",
     "mlflow>=3.11.1; python_version < '3.14'",
@@ -99,6 +103,10 @@ gepa = ["py.typed"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+# Put the repo root on sys.path so tests can import the `examples.*` namespace
+# packages (used by test_dataset_scoring.py) the same way `python -m examples...`
+# does.
+pythonpath = ["."]
 
 [tool.ruff]
 include = ["src/**/*.py"]

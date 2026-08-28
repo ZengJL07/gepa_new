@@ -12,6 +12,7 @@ budget, ``run_dir``, and its own callbacks/stoppers on top.
 from __future__ import annotations
 
 import tempfile
+from collections.abc import Sequence
 from pathlib import Path
 from typing import TYPE_CHECKING, Any, cast
 
@@ -22,6 +23,57 @@ if TYPE_CHECKING:
     from gepa.oa.config import OptimizeAnythingConfig
     from gepa.oa.eval_server import EvalServer
     from gepa.oa.task import Task
+
+
+class _ServerBudgetStopper:
+    """Stop the GEPA loop once the eval server's ledger is spent.
+
+    Core's own ``MaxMetricCallsStopper`` reads ``GEPAState.total_num_evals``,
+    which counts cache misses and lags the server. This stopper reads the
+    ledger that actually enforces the cap, so the loop ends at an iteration
+    boundary instead of a mid-iteration :class:`BudgetExhausted`.
+
+    Deliberately conservative: it also stops when only a *partial* iteration
+    could be funded, because an iteration that runs out midway discards every
+    eval it already paid for.
+    """
+
+    def __init__(self, budget: Any, reserve: int = 0) -> None:
+        self._budget = budget
+        # Evals the next iteration is expected to need. Stopping with this much
+        # left is cheaper than starting an iteration that cannot finish.
+        self.reserve = max(0, reserve)
+
+    def __call__(self, _gepa_state: Any) -> bool:
+        remaining = self._budget.remaining
+        if remaining is None:  # unlimited
+            return False
+        return remaining <= self.reserve
+
+
+def _install_budget_stopper(gepa_config: Any, budget: Any, reserve: int = 0) -> None:
+    """Append a :class:`_ServerBudgetStopper` to ``gepa_config.stop_callbacks``.
+
+    Appended rather than assigned so it composes with any user-supplied
+    stoppers (the launcher folds the whole list into a ``CompositeStopper``).
+    No-op when the budget is unlimited.
+
+    Args:
+        reserve: evals to keep in hand — the cost of one iteration (a reflection
+            minibatch plus a full valset pass), the smallest unit of work an
+            iteration must be able to fund.
+    """
+    if budget.max_evals is None:
+        return
+
+    stopper = _ServerBudgetStopper(budget, reserve=reserve)
+    existing = gepa_config.stop_callbacks
+    if existing is None:
+        gepa_config.stop_callbacks = [stopper]
+    elif isinstance(existing, Sequence) and not isinstance(existing, str | bytes):
+        gepa_config.stop_callbacks = [*existing, stopper]
+    else:
+        gepa_config.stop_callbacks = [existing, stopper]
 
 
 class GepaEngine:
@@ -64,6 +116,32 @@ class GepaEngine:
         # limits — set them as EngineConfig fields; GEPA core installs the
         # matching stoppers. The eval-call cap must win over any user value.
         gepa_config.engine.max_metric_calls = budget.max_evals
+
+        # There are TWO eval counters and they drift apart:
+        #   * GEPAState.total_num_evals — what core's MaxMetricCallsStopper reads.
+        #     Counts cache MISSES only, and is updated at iteration boundaries.
+        #   * server.budget.used — the authoritative ledger that actually raises.
+        #     Counts every non-cached call, incremented the moment it happens.
+        # Core can therefore start an iteration believing it has budget left
+        # while the server is already at the cap, and BudgetExhausted surfaces
+        # from deep inside a parallel valset eval. That aborts the whole
+        # iteration: every eval already paid for in it is discarded, and with
+        # raise_on_exception=True (the default) it propagates out of core.run().
+        # Recovery from persisted state still returns a usable result, so the
+        # run does not die — but it loses that iteration's work and dumps an
+        # alarming traceback at what is really a normal end-of-budget stop.
+        #
+        # Fix: also stop on the server's own counter, so the loop exits at an
+        # iteration boundary BEFORE any eval can raise. Composed with (not
+        # replacing) whatever stopper core installs, and with any user stopper.
+        # Reserve the cost of one iteration — a reflection minibatch plus a full
+        # valset pass — since an iteration that cannot fund both dies partway and
+        # discards every eval it already paid for.
+        _install_budget_stopper(
+            gepa_config,
+            budget,
+            reserve=len(task.val_set or ()) + (gepa_config.reflection.reflection_minibatch_size or 0),
+        )
         if self.run_dir is not None:
             gepa_config.engine.run_dir = self.run_dir
         if gepa_config.engine.run_dir is None:

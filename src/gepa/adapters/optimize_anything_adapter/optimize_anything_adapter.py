@@ -872,6 +872,16 @@ class OptimizeAnythingAdapter(GEPAAdapter):
         example) combining shared SideInfo fields with any
         ``<component>_specific_info`` data.  The ``"scores"`` key is renamed
         to ``"Scores (Higher is Better)"`` for clarity in the LLM prompt.
+
+        Keys beginning with ``_`` are internal bookkeeping (``_budget`` from the
+        eval server, ``_gepa_transient_failure``) and are excluded. They are not
+        feedback — nothing about a run's remaining eval count tells the reflection
+        LM how to improve a prompt — and including them actively hurt: the
+        rendered prompt embedded the live counters, so it differed between runs
+        whenever eval counts differed. That made every LM-cache lookup miss,
+        which cascaded (new candidate text -> new candidate hash -> fitness-cache
+        miss -> episodes re-run), so replaying an identical configuration paid
+        full price. Excluding them keeps the cache keyed on actual feedback.
         """
         scores, side_infos = eval_batch.scores, eval_batch.trajectories
         assert side_infos is not None
@@ -881,6 +891,8 @@ class OptimizeAnythingAdapter(GEPAAdapter):
             for _score, side_info in zip(scores, side_infos, strict=False):
                 ret[component_name].append({})
                 for k, v in side_info.items():
+                    if k.startswith("_"):
+                        continue
                     if k == "scores":
                         ret[component_name][-1]["Scores (Higher is Better)"] = v
                     elif not k.endswith("_specific_info"):

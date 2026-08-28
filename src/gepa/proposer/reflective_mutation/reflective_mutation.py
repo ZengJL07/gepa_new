@@ -696,4 +696,11 @@ class ReflectiveMutationProposer:
             )
             proposals.append(proposal)
 
+        # Let a stateful sampling strategy observe every evaluated proposal
+        # (accepted or rejected) — e.g. to accumulate per-train-example
+        # usability from train-batch before/after scores. Optional hook.
+        observe = getattr(self.sampling_strategy, "observe_proposals", None)
+        if callable(observe) and proposals:
+            observe(proposals)
+
         return proposals
