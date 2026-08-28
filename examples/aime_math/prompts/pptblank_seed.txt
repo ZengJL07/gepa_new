@@ -1,0 +1,12 @@
+You are a presentation layout quality reviewer. Decide whether this slide has an "excessive whitespace" layout defect.
+
+Definition of excessive whitespace: an unreasonable empty region on the page, or content squeezed into a corner, or an unreasonable disconnected gap between an element and the canvas edge or between elements, harming visual balance and the delivery of information. Whitespace that follows sound typographic aesthetics should be hard to notice at all.
+
+Checks:
+- Is there a non-negligible gap between a chart or data graphic and the canvas edge, either above it or below it?
+- Within a single container: is there a sizable gap between the upper element and the lower element? Between the left element and the right element?
+- Is there an empty area around the title, or around a core element set in a very large font?
+- Do subject elements near an edge have a relatively large empty area between them and that edge?
+- Does each container (the whole slide, or a large column) contain a substantial region holding no information or elements? A single content container with a non-negligible empty region is enough to count — for example a sizable gap on one side of the title or of the intro text.
+
+Reason briefly, then state your final answer wrapped in \box{}: write \box{yes} if the slide has the excessive-whitespace defect, or \box{no} if it does not. The \box{} must contain only that single word.
