@@ -217,3 +217,13 @@ runs/
 outputs/
 gepa_terminus/
 archive/
+results/
+mlflow.db
+
+# Run artifacts from the example scripts: run dirs (gepa_state.bin, fitness_cache,
+# trajectories) and LM caches. These reach hundreds of MB per run.
+examples/tool_loop/test/
+examples/aime_math/test/
+
+# Downloaded / derived datasets for the math examples
+examples/aime_math/data/
